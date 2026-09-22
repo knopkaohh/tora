@@ -265,7 +265,7 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-5 text-sm text-ink/60">Москва, м. Бауманская</p>
+              <p className="mt-5 text-sm text-ink/60">м. Савёловская — м. Дмитровская</p>
               <Link href="/schedule" className="mt-4 inline-block text-sm font-medium text-signal">
                 Полное расписание →
               </Link>

@@ -37,7 +37,8 @@ export function SiteFooter() {
           <a href={`tel:${phoneTel}`} className="mt-4 block font-heading text-2xl">
             {phoneDisplay}
           </a>
-          <p className="mt-3 text-sm text-white/70">Москва, м. Бауманская</p>
+          <p className="mt-3 text-sm text-white/70">Москва · три зала</p>
+          <p className="mt-1 text-sm text-white/70">м. Савёловская — Дмитровская</p>
           <p className="mt-1 text-sm text-white/70">Пробная тренировка — бесплатно</p>
         </div>
       </div>

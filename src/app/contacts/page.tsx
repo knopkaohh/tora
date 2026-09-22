@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { SignupForm } from "@/components/signup-form";
-import { nav, phoneDisplay, phoneTel, schedule } from "@/lib/content";
+import { locations, nav, phoneDisplay, phoneTel, schedule } from "@/lib/content";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Контакты",
   description:
-    "Телефон Академии Окинавского Каратэ +7 495 003-77-73. Зал у метро Бауманская, запись на пробное занятие.",
+    "Телефон Академии Окинавского Каратэ +7 495 003-777-3. Залы: Савёловская — Дмитровская, Писцовая, Смоленская.",
 };
 
 export default function ContactsPage() {
@@ -29,8 +29,15 @@ export default function ContactsPage() {
           </a>
           <dl className="mt-8 space-y-5 text-sm">
             <div>
-              <dt className="text-xs tracking-[0.16em] text-ink/45 uppercase">Адрес</dt>
-              <dd className="mt-1">Москва, м. Бауманская</dd>
+              <dt className="text-xs tracking-[0.16em] text-ink/45 uppercase">Залы</dt>
+              <dd className="mt-2 space-y-3">
+                {locations.map((hall) => (
+                  <p key={hall.id}>
+                    <span className="block font-medium">{hall.venue}</span>
+                    <span className="text-ink/65">{hall.metro}, {hall.address}</span>
+                  </p>
+                ))}
+              </dd>
             </div>
             <div>
               <dt className="text-xs tracking-[0.16em] text-ink/45 uppercase">Клуб</dt>
