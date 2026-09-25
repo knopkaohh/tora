@@ -17,7 +17,7 @@ export default function ContactsPage() {
         kicker="Контакты"
         title="Запишитесь, пока есть место в группе"
         text="Пробное бесплатное. Позвоните или соберите заявку — администратор подтвердит время."
-        image="/media/kata-2025.webp"
+        image="/tora/media/kata-2025.webp"
         alt="Победитель в категории ката"
       />
 

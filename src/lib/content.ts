@@ -2,9 +2,9 @@ export const phoneDisplay = "+7 495 003-777-3";
 export const phoneTel = "+74950037773";
 
 export const logos = [
-  { src: "/media/logo.svg", alt: "Клуб Тора", name: "Тора" },
-  { src: "/media/logo-koshiki.png", alt: "Koshiki Karate", name: "Косики каратэ" },
-  { src: "/media/logo-cshk.png", alt: "Центральная школа каратэ", name: "ЦШК" },
+  { src: "/tora/media/logo.svg", alt: "Клуб Тора", name: "Тора" },
+  { src: "/tora/media/logo-koshiki.png", alt: "Koshiki Karate", name: "Косики каратэ" },
+  { src: "/tora/media/logo-cshk.png", alt: "Центральная школа каратэ", name: "ЦШК" },
 ] as const;
 
 export const locations = [
@@ -103,7 +103,7 @@ export const competitions = [
     tag: "Международный кубок",
     title: "Кубок Николая Японского",
     place: "Москва",
-    image: "/media/cup-2024.webp",
+    image: "/tora/media/cup-2024.webp",
     alt: "Победитель турнира с кубком",
   },
   {
@@ -113,7 +113,7 @@ export const competitions = [
     tag: "Командный зачёт",
     title: "Команда Тора — лучшие",
     place: "Первенство",
-    image: "/media/team-2024.webp",
+    image: "/tora/media/team-2024.webp",
     alt: "Команда клуба на пьедестале",
   },
   {
@@ -123,7 +123,7 @@ export const competitions = [
     tag: "ANTA CUP",
     title: "Кубок ANTA — 3 медали",
     place: "Москва",
-    image: "/media/podium-2020.webp",
+    image: "/tora/media/podium-2020.webp",
     alt: "Три призёра на пьедестале",
   },
   {
@@ -133,7 +133,7 @@ export const competitions = [
     tag: "Anta Cup · KATA",
     title: "Чемпионат мира",
     place: "Международный",
-    image: "/media/kata-2025.webp",
+    image: "/tora/media/kata-2025.webp",
     alt: "Победитель в категории ката",
   },
   {
@@ -143,7 +143,7 @@ export const competitions = [
     tag: "Шихан-Каратэ",
     title: "Мировое первенство",
     place: "Япония",
-    image: "/media/group-2017.webp",
+    image: "/tora/media/group-2017.webp",
     alt: "Группа спортсменов клуба",
   },
   {
@@ -153,7 +153,7 @@ export const competitions = [
     tag: "Сборная России",
     title: "Чемпионат мира",
     place: "Токио",
-    image: "/media/team-russia.webp",
+    image: "/tora/media/team-russia.webp",
     alt: "Сборная России по каратэ с детьми",
   },
   {
@@ -163,7 +163,7 @@ export const competitions = [
     tag: "ANTA cup",
     title: "Кубок ANTA",
     place: "Япония",
-    image: "/media/kata-train.webp",
+    image: "/tora/media/kata-train.webp",
     alt: "Тренировка ката",
   },
   {
@@ -173,7 +173,7 @@ export const competitions = [
     tag: "По косики каратэ",
     title: "Кубок России",
     place: "Москва",
-    image: "/media/weapons.jpg",
+    image: "/tora/media/weapons.jpg",
     alt: "Тренировка с оружием",
   },
 ];
@@ -184,7 +184,7 @@ export const trainings = [
     note: "по косики каратэ",
     title: "Кубок России",
     place: "Москва",
-    image: "/media/weapons.jpg",
+    image: "/tora/media/weapons.jpg",
     alt: "Тренировка с оружием",
   },
   {
@@ -192,7 +192,7 @@ export const trainings = [
     note: "базовая техника",
     title: "Кубок ANTA",
     place: "Додзё",
-    image: "/media/kata-train.webp",
+    image: "/tora/media/kata-train.webp",
     alt: "Тренировка ката",
   },
   {
@@ -200,7 +200,7 @@ export const trainings = [
     note: "мастера",
     title: "Взрослая группа",
     place: "ЦШК",
-    image: "/media/seniors.webp",
+    image: "/tora/media/seniors.webp",
     alt: "Тренировка старших учеников",
   },
   {
@@ -208,7 +208,7 @@ export const trainings = [
     note: "все возрасты",
     title: "Сдача на пояса",
     place: "Додзё",
-    image: "/media/belts.webp",
+    image: "/tora/media/belts.webp",
     alt: "Группа с тренерами",
   },
   {
@@ -216,7 +216,7 @@ export const trainings = [
     note: "ANTA CUP",
     title: "Чемпионат мира",
     place: "Международный",
-    image: "/media/kata-2025.webp",
+    image: "/tora/media/kata-2025.webp",
     alt: "Выступление в ката",
   },
   {
@@ -224,7 +224,7 @@ export const trainings = [
     note: "сборная России",
     title: "Чемпионат мира",
     place: "Токио",
-    image: "/media/team-russia.webp",
+    image: "/tora/media/team-russia.webp",
     alt: "Сборная России по каратэ",
   },
 ];
@@ -343,7 +343,7 @@ export const trainers = [
     role: "Президент Академии Окинавского Каратэ",
     name: "Николай Коровин",
     meta: "35 лет практики · Москва",
-    image: "/media/korovin.webp",
+    image: "/tora/media/korovin.webp",
     alt: "Николай Коровин — президент Академии",
     ranks: [
       "Мастер спорта по каратэ и самбо",
@@ -365,7 +365,7 @@ export const trainers = [
     role: "Генеральный директор Академии Окинавского Каратэ",
     name: "Алексей Юрков",
     meta: "25 лет практики · Москва",
-    image: "/media/yurkov.webp",
+    image: "/tora/media/yurkov.webp",
     alt: "Алексей Юрков — генеральный директор",
     ranks: [
       "Мастер спорта по каратэ",

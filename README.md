@@ -22,20 +22,19 @@
 
 ## Запуск
 
+Сайт рассчитан на каталог `/tora` (адрес `https://birka-calculator.ru/tora`).
+
 ```bash
 npm install
 npm run dev
 ```
 
-Откройте [http://127.0.0.1:4179](http://127.0.0.1:4179), если сервер запущен так:
+Локально открывайте [http://127.0.0.1:4179/tora](http://127.0.0.1:4179/tora).
 
-```bash
-npm run dev -- --hostname 0.0.0.0 --port 4179
-```
-
-Сборка:
+Статическая сборка для хостинга:
 
 ```bash
 npm run build
-npm start
 ```
+
+Готовые файлы лежат в `out/`. Их нужно положить в папку `tora` на хосте, либо распаковать архив `tora-birka-calculator.zip` в корень сайта, чтобы получилось `public_html/tora/`.

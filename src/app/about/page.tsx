@@ -19,7 +19,7 @@ export default function AboutPage() {
         kicker="О академии"
         title="Клуб, в котором воспитывают характер"
         text="Академия Окинавского Каратэ «Тигр» учит не только удару. Здесь учатся держать себя, проигрывать и вставать."
-        image="/media/group-2017.webp"
+        image="/tora/media/group-2017.webp"
         alt="Группа спортсменов клуба"
       />
 
@@ -65,12 +65,12 @@ export default function AboutPage() {
       <section className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-20 md:grid-cols-2 md:px-6">
         <Reveal>
           <div className="photo-frame relative aspect-[4/3] overflow-hidden rounded-[2rem]">
-            <Image src="/media/seniors.webp" alt="Тренировка старших учеников" fill className="object-cover" sizes="(min-width: 768px) 45vw, 100vw" />
+            <Image src="/tora/media/seniors.webp" alt="Тренировка старших учеников" fill className="object-cover" sizes="(min-width: 768px) 45vw, 100vw" />
           </div>
         </Reveal>
         <Reveal delay={80}>
           <div className="photo-frame relative aspect-[4/3] overflow-hidden rounded-[2rem] md:mt-16">
-            <Image src="/media/belts.webp" alt="Группа с тренерами" fill className="object-cover" sizes="(min-width: 768px) 45vw, 100vw" />
+            <Image src="/tora/media/belts.webp" alt="Группа с тренерами" fill className="object-cover" sizes="(min-width: 768px) 45vw, 100vw" />
           </div>
         </Reveal>
       </section>

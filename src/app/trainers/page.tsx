@@ -18,7 +18,7 @@ export default function TrainersPage() {
         kicker="Тренеры · 道"
         title="Учителя пути"
         text="Президент академии и генеральный директор. За их именами — даны, сборная и десятки лет практики."
-        image="/media/team-russia.webp"
+        image="/tora/media/team-russia.webp"
         alt="Сборная России по каратэ с детьми"
       />
 

@@ -19,7 +19,7 @@ export default function HomePage() {
     <>
       <section className="relative isolate min-h-[100svh] overflow-hidden bg-ink text-white">
         <Image
-          src="/media/hero.png"
+          src="/tora/media/hero.png"
           alt="Тренировка в зале Академии Окинавского Каратэ"
           fill
           priority
@@ -118,7 +118,7 @@ export default function HomePage() {
           <Reveal delay={120}>
             <div className="photo-frame relative aspect-[4/5] overflow-hidden rounded-[2rem]">
               <Image
-                src="/media/podium-2020.webp"
+                src="/tora/media/podium-2020.webp"
                 alt="Три призёра на пьедестале"
                 fill
                 className="object-cover"
@@ -198,7 +198,7 @@ export default function HomePage() {
 
       <section className="relative overflow-hidden bg-ink text-white">
         <Image
-          src="/media/kata-train.webp"
+          src="/tora/media/kata-train.webp"
           alt=""
           fill
           className="object-cover opacity-30"

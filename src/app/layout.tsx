@@ -19,13 +19,14 @@ const unbounded = Unbounded({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://birka-calculator.ru/tora"),
   title: {
     default: "Академия Окинавского Каратэ — клуб Тора",
     template: "%s — Академия Окинавского Каратэ",
   },
   description:
     "Клуб спортивных единоборств «Тигр». Окинавское каратэ для детей, подростков и взрослых в Москве. Бесплатное пробное занятие.",
-  icons: { icon: "/media/logo.svg" },
+  icons: { icon: "/tora/media/logo.svg" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

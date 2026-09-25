@@ -1,0 +1,23 @@
+Академия Окинавского Каратэ
+Адрес после заливки: https://birka-calculator.ru/tora
+
+Как залить на хост
+1. Распакуйте архив tora-birka-calculator.zip в корень сайта
+   (обычно public_html или www).
+2. Должна появиться папка tora. Внутри неё — index.html, media, _next.
+3. Обязательно загрузите папку _next (стили и скрипты).
+   Если FTP её не видно, включите показ скрытых файлов.
+4. Проверьте ссылку: https://birka-calculator.ru/tora
+   или https://birka-calculator.ru/tora/
+
+Страницы:
+  https://birka-calculator.ru/tora/about/
+  https://birka-calculator.ru/tora/schedule/
+  https://birka-calculator.ru/tora/locations/
+  https://birka-calculator.ru/tora/trainers/
+  https://birka-calculator.ru/tora/pricing/
+  https://birka-calculator.ru/tora/contacts/
+
+Это обычный статический сайт: PHP и база не нужны.
+Если Apache, файл .htaccess уже лежит в папке tora.
+Не кладите содержимое tora в корень сайта — только саму папку tora.
