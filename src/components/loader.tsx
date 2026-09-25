@@ -27,7 +27,7 @@ export function Loader() {
       aria-live="polite"
       aria-label="Загрузка сайта академии"
     >
-      <div className="flex w-[min(92vw,420px)] flex-col items-center">
+      <div className="flex w-[min(94vw,560px)] flex-col items-center">
         <BrandLogos size="lg" />
         <p className="mt-8 text-center font-heading text-sm tracking-[0.18em] text-ink uppercase">
           Академия

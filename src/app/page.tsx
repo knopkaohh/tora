@@ -62,7 +62,7 @@ export default function HomePage() {
       </div>
 
       <section className="border-b border-ink/8 bg-paper">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-10 md:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 py-12 md:px-6 md:py-16">
           <p className="text-[0.68rem] tracking-[0.28em] text-ink/45 uppercase">Эмблемы академии</p>
           <BrandLogos size="lg" labeled />
         </div>

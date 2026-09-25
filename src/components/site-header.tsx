@@ -33,7 +33,7 @@ export function SiteHeader() {
         solid ? "bg-canvas/92 text-ink shadow-[0_1px_0_rgba(2,31,64,0.08)] backdrop-blur-md" : "text-white",
       )}
     >
-      <div className="mx-auto flex h-18 max-w-6xl items-center gap-4 px-4 md:h-20 md:px-6">
+      <div className="mx-auto flex h-20 max-w-6xl items-center gap-4 px-4 md:h-24 md:px-6">
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <BrandLogos size="sm" />
           <span className="min-w-0 leading-tight">
