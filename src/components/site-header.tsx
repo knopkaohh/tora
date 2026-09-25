@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { BrandLogos } from "@/components/brand-logos";
 import { TrialButton } from "@/components/trial-button";
 import { nav, phoneDisplay, phoneTel } from "@/lib/content";
 import { cn } from "@/lib/utils";
@@ -35,14 +35,12 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-18 max-w-6xl items-center gap-4 px-4 md:h-20 md:px-6">
         <Link href="/" className="flex min-w-0 items-center gap-3">
-          <span className="grid size-11 shrink-0 place-items-center rounded-full bg-white shadow-sm">
-            <Image src="/media/logo.svg" alt="" width={32} height={32} unoptimized className="size-8 object-contain" />
-          </span>
+          <BrandLogos size="sm" />
           <span className="min-w-0 leading-tight">
             <span className="block font-heading text-sm tracking-[0.16em] uppercase">
               Тора
             </span>
-            <span className={cn("block truncate text-[0.68rem] tracking-wide", solid ? "text-ink/55" : "text-white/70")}>
+            <span className={cn("hidden truncate text-[0.68rem] tracking-wide sm:block", solid ? "text-ink/55" : "text-white/70")}>
               Окинавское каратэ
             </span>
           </span>

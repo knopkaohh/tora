@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { BrandLogos } from "@/components/brand-logos";
 import { nav, phoneDisplay, phoneTel } from "@/lib/content";
 
 export function SiteFooter() {
@@ -7,14 +7,10 @@ export function SiteFooter() {
     <footer className="bg-ink text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-[1.3fr_1fr_1fr] md:px-6">
         <div>
-          <div className="flex items-center gap-3">
-            <span className="grid size-12 place-items-center rounded-full bg-white">
-              <Image src="/media/logo.svg" alt="" width={36} height={36} unoptimized className="size-9 object-contain" />
-            </span>
-            <div>
-              <p className="font-heading text-sm tracking-[0.18em] uppercase">Клуб Тора</p>
-              <p className="text-xs text-white/60">Академия Окинавского Каратэ</p>
-            </div>
+          <BrandLogos size="md" className="justify-start" />
+          <div className="mt-5">
+            <p className="font-heading text-sm tracking-[0.18em] uppercase">Клуб Тора</p>
+            <p className="text-xs text-white/60">Академия Окинавского Каратэ</p>
           </div>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/70">
             Традиции Окинавы, характер и живой зал. Москва, с 2017 года.

@@ -1,6 +1,12 @@
 export const phoneDisplay = "+7 495 003-777-3";
 export const phoneTel = "+74950037773";
 
+export const logos = [
+  { src: "/media/logo.svg", alt: "Клуб Тора", name: "Тора" },
+  { src: "/media/logo-koshiki.png", alt: "Koshiki Karate", name: "Косики каратэ" },
+  { src: "/media/logo-cshk.png", alt: "Центральная школа каратэ", name: "ЦШК" },
+] as const;
+
 export const locations = [
   {
     id: "main",

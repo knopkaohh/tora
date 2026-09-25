@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BrandLogos } from "@/components/brand-logos";
 import { CompetitionGrid } from "@/components/competition-grid";
 import { Reveal } from "@/components/reveal";
 import { TrialButton } from "@/components/trial-button";
@@ -59,6 +60,13 @@ export default function HomePage() {
           ))}
         </div>
       </div>
+
+      <section className="border-b border-ink/8 bg-paper">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-10 md:px-6">
+          <p className="text-[0.68rem] tracking-[0.28em] text-ink/45 uppercase">Эмблемы академии</p>
+          <BrandLogos size="lg" labeled />
+        </div>
+      </section>
 
       <section className="mx-auto grid max-w-6xl gap-12 px-4 py-20 md:grid-cols-[0.9fr_1.1fr] md:px-6 md:py-28">
         <Reveal>
