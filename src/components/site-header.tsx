@@ -33,20 +33,23 @@ export function SiteHeader() {
         solid ? "bg-canvas/92 text-ink shadow-[0_1px_0_rgba(2,31,64,0.08)] backdrop-blur-md" : "text-white",
       )}
     >
-      <div className="mx-auto flex h-20 max-w-6xl items-center gap-4 px-4 md:h-24 md:px-6">
-        <Link href="/" className="flex min-w-0 items-center gap-3">
-          <BrandLogos size="sm" />
-          <span className="min-w-0 leading-tight">
-            <span className="block font-heading text-sm tracking-[0.16em] uppercase">
+      <div className="mx-auto flex h-16 max-w-[90rem] items-center gap-3 px-4 lg:h-[4.5rem] lg:gap-5 lg:px-6">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5">
+          <BrandLogos size="xs" className="gap-1.5 md:gap-2" />
+          <span className="hidden leading-none xl:block">
+            <span className="block font-heading text-[0.7rem] tracking-[0.18em] uppercase">
               Тора
             </span>
-            <span className={cn("hidden truncate text-[0.68rem] tracking-wide sm:block", solid ? "text-ink/55" : "text-white/70")}>
+            <span className={cn("mt-1 block text-[0.62rem] tracking-wide", solid ? "text-ink/55" : "text-white/70")}>
               Окинавское каратэ
             </span>
           </span>
         </Link>
 
-        <nav className="ml-auto hidden items-center gap-6 lg:flex" aria-label="Основное меню">
+        <nav
+          className="ml-auto hidden min-w-0 flex-1 flex-nowrap items-center justify-end gap-x-3 xl:gap-x-5 2xl:justify-center lg:flex"
+          aria-label="Основное меню"
+        >
           {nav.map((item) => {
             const active = pathname === item.href;
             return (
@@ -54,7 +57,7 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-[0.72rem] tracking-[0.16em] uppercase transition-colors",
+                  "shrink-0 whitespace-nowrap text-[0.68rem] tracking-[0.08em] uppercase transition-colors",
                   active ? "text-signal" : solid ? "text-ink/75 hover:text-ink" : "text-white/80 hover:text-white",
                 )}
                 aria-current={active ? "page" : undefined}
@@ -65,17 +68,17 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <a
-          href={`tel:${phoneTel}`}
-          className={cn(
-            "ml-auto hidden text-sm font-medium tracking-wide xl:inline",
-            solid ? "text-ink" : "text-white",
-          )}
-        >
-          {phoneDisplay}
-        </a>
-        <div className="hidden lg:block">
-          <TrialButton className="h-10 px-4 text-xs tracking-[0.12em] uppercase">
+        <div className="hidden shrink-0 items-center gap-3 xl:gap-4 lg:flex">
+          <a
+            href={`tel:${phoneTel}`}
+            className={cn(
+              "whitespace-nowrap text-[0.8rem] font-medium tracking-normal",
+              solid ? "text-ink" : "text-white",
+            )}
+          >
+            {phoneDisplay}
+          </a>
+          <TrialButton className="h-9 shrink-0 px-3.5 text-[0.68rem] tracking-[0.08em] uppercase">
             Пробное
           </TrialButton>
         </div>
@@ -114,7 +117,7 @@ export function SiteHeader() {
             })}
           </nav>
           <div className="mt-6 flex flex-col gap-3">
-            <a href={`tel:${phoneTel}`} className="text-sm font-medium text-ink">
+            <a href={`tel:${phoneTel}`} className="whitespace-nowrap text-sm font-medium text-ink">
               {phoneDisplay}
             </a>
             <TrialButton>Записаться на пробное</TrialButton>

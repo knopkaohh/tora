@@ -3,6 +3,7 @@ import { logos } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 const sizes = {
+  xs: { wrap: "h-9 w-9", image: 36 },
   sm: { wrap: "h-12 w-12 md:h-14 md:w-14", image: 56 },
   md: { wrap: "h-16 w-16 md:h-20 md:w-20", image: 80 },
   lg: { wrap: "h-28 w-28 md:h-36 md:w-36", image: 144 },
