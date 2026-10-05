@@ -53,7 +53,7 @@ export default function PortfolioPage() {
                     src={item.image}
                     alt={item.alt}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     sizes={item.featured ? "(min-width: 1024px) 60vw, 100vw" : "(min-width: 1024px) 30vw, 100vw"}
                   />
                 </div>
