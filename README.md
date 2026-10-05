@@ -38,4 +38,4 @@ npm run dev
 npm run build
 ```
 
-Готовые файлы лежат в `out/`. Распакуйте архив `tigr-karate-site.zip` в корень хоста (`public_html`), чтобы `index.html` и папка `media` оказались рядом.
+Готовые файлы лежат в `out/`. Распакуйте архив `tigr-karate-site.zip` в корень хоста (`public_html`), чтобы `index.html` и папка `media` оказались рядом, а не внутри второго каталога с именем архива.
