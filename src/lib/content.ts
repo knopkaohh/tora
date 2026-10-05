@@ -2,9 +2,9 @@ export const phoneDisplay = "+7 495 003-777-3";
 export const phoneTel = "+74950037773";
 
 export const logos = [
-  { src: "/tora/media/logo.svg", alt: "Клуб Тора", name: "Тора" },
-  { src: "/tora/media/logo-koshiki.png", alt: "Koshiki Karate", name: "Косики каратэ" },
-  { src: "/tora/media/logo-cshk.png", alt: "Центральная школа каратэ", name: "ЦШК" },
+  { src: "/media/logo.svg", alt: "Клуб Тора", name: "Тора" },
+  { src: "/media/logo-koshiki.png", alt: "Koshiki Karate", name: "Косики каратэ" },
+  { src: "/media/logo-cshk.png", alt: "Центральная школа каратэ", name: "ЦШК" },
 ] as const;
 
 export const locations = [
@@ -104,7 +104,7 @@ export const competitions = [
     tag: "Международный кубок",
     title: "Кубок Николая Японского",
     place: "Москва",
-    image: "/tora/media/cup-2024.webp",
+    image: "/media/cup-2024.webp",
     alt: "Победитель турнира с кубком",
   },
   {
@@ -114,7 +114,7 @@ export const competitions = [
     tag: "Командный зачёт",
     title: "Команда Тора — лучшие",
     place: "Первенство",
-    image: "/tora/media/team-2024.webp",
+    image: "/media/team-2024.webp",
     alt: "Команда клуба на пьедестале",
   },
   {
@@ -124,7 +124,7 @@ export const competitions = [
     tag: "ANTA CUP",
     title: "Кубок ANTA — 3 медали",
     place: "Москва",
-    image: "/tora/media/podium-2020.webp",
+    image: "/media/podium-2020.webp",
     alt: "Три призёра на пьедестале",
   },
   {
@@ -134,7 +134,7 @@ export const competitions = [
     tag: "Anta Cup · KATA",
     title: "Чемпионат мира",
     place: "Международный",
-    image: "/tora/media/kata-2025.webp",
+    image: "/media/kata-2025.webp",
     alt: "Победитель в категории ката",
   },
   {
@@ -144,7 +144,7 @@ export const competitions = [
     tag: "Шихан-Каратэ",
     title: "Мировое первенство",
     place: "Япония",
-    image: "/tora/media/group-2017.webp",
+    image: "/media/group-2017.webp",
     alt: "Группа спортсменов клуба",
   },
   {
@@ -154,7 +154,7 @@ export const competitions = [
     tag: "Сборная России",
     title: "Чемпионат мира",
     place: "Токио",
-    image: "/tora/media/team-russia.webp",
+    image: "/media/team-russia.webp",
     alt: "Сборная России по каратэ с детьми",
   },
   {
@@ -164,7 +164,7 @@ export const competitions = [
     tag: "ANTA cup",
     title: "Кубок ANTA",
     place: "Япония",
-    image: "/tora/media/kata-train.webp",
+    image: "/media/kata-train.webp",
     alt: "Тренировка ката",
   },
   {
@@ -174,7 +174,7 @@ export const competitions = [
     tag: "По косики каратэ",
     title: "Кубок России",
     place: "Москва",
-    image: "/tora/media/weapons.jpg",
+    image: "/media/weapons.jpg",
     alt: "Тренировка с оружием",
   },
 ];
@@ -185,7 +185,7 @@ export const trainings = [
     note: "по косики каратэ",
     title: "Кубок России",
     place: "Москва",
-    image: "/tora/media/weapons.jpg",
+    image: "/media/weapons.jpg",
     alt: "Тренировка с оружием",
   },
   {
@@ -193,7 +193,7 @@ export const trainings = [
     note: "базовая техника",
     title: "Кубок ANTA",
     place: "Додзё",
-    image: "/tora/media/kata-train.webp",
+    image: "/media/kata-train.webp",
     alt: "Тренировка ката",
   },
   {
@@ -201,7 +201,7 @@ export const trainings = [
     note: "мастера",
     title: "Взрослая группа",
     place: "ЦШК",
-    image: "/tora/media/seniors.webp",
+    image: "/media/seniors.webp",
     alt: "Тренировка старших учеников",
   },
   {
@@ -209,7 +209,7 @@ export const trainings = [
     note: "все возрасты",
     title: "Сдача на пояса",
     place: "Додзё",
-    image: "/tora/media/belts.webp",
+    image: "/media/belts.webp",
     alt: "Группа с тренерами",
   },
   {
@@ -217,7 +217,7 @@ export const trainings = [
     note: "ANTA CUP",
     title: "Чемпионат мира",
     place: "Международный",
-    image: "/tora/media/kata-2025.webp",
+    image: "/media/kata-2025.webp",
     alt: "Выступление в ката",
   },
   {
@@ -225,7 +225,7 @@ export const trainings = [
     note: "сборная России",
     title: "Чемпионат мира",
     place: "Токио",
-    image: "/tora/media/team-russia.webp",
+    image: "/media/team-russia.webp",
     alt: "Сборная России по каратэ",
   },
 ];
@@ -344,7 +344,7 @@ export const trainers = [
     role: "Президент Академии Окинавского Каратэ",
     name: "Николай Коровин",
     meta: "35 лет практики · Москва",
-    image: "/tora/media/korovin.webp",
+    image: "/media/korovin.webp",
     alt: "Николай Коровин — президент Академии",
     ranks: [
       "Мастер спорта по каратэ и самбо",
@@ -366,7 +366,7 @@ export const trainers = [
     role: "Генеральный директор Академии Окинавского Каратэ",
     name: "Алексей Юрков",
     meta: "37 лет практики · Москва",
-    image: "/tora/media/yurkov.webp",
+    image: "/media/yurkov.webp",
     alt: "Алексей Юрков — генеральный директор",
     ranks: [
       "Мастер спорта по каратэ",
@@ -390,7 +390,7 @@ export const trainers = [
     role: "Старший тренер клуба «Тигр»",
     name: "Даниил Костин",
     meta: "1 дан · Москва",
-    image: "/tora/media/kostin.webp",
+    image: "/media/kostin.webp",
     alt: "Даниил Костин — старший тренер клуба «Тигр»",
     ranks: [
       "Чёрный пояс, 1-й дан косики каратэ",
@@ -427,7 +427,7 @@ export const portfolioPhotos = [
     tag: "Зал",
     title: "После занятия в додзё",
     text: "Детская группа с тренерами: цветные пояса, белые ги и два шпагата на синем татами.",
-    image: "/tora/media/portfolio-dojo-kids.webp",
+    image: "/media/portfolio-dojo-kids.webp",
     alt: "Детская группа и тренеры в зале после тренировки",
     featured: true,
   },
@@ -436,7 +436,7 @@ export const portfolioPhotos = [
     tag: "Старт",
     title: "Первые дипломы",
     text: "Самые младшие на пьедестале: дипломы первенства и первая медаль.",
-    image: "/tora/media/portfolio-first-diplomas.webp",
+    image: "/media/portfolio-first-diplomas.webp",
     alt: "Трое детей в ги с дипломами и медалью на пьедестале",
     featured: false,
   },
@@ -445,7 +445,7 @@ export const portfolioPhotos = [
     tag: "Техника",
     title: "Работа мастеров в паре",
     text: "Разбор приёма в зале: чёрное ги с иероглифом «тигр» и белое ги Центральной школы каратэ.",
-    image: "/tora/media/portfolio-masters-pair.webp",
+    image: "/media/portfolio-masters-pair.webp",
     alt: "Два мастера отрабатывают приём в додзё",
     featured: false,
   },
@@ -454,7 +454,7 @@ export const portfolioPhotos = [
     tag: "Сбор",
     title: "Общая группа",
     text: "Дети и тренеры после практики — большой состав клуба в одном кадре.",
-    image: "/tora/media/portfolio-seminar-group.webp",
+    image: "/media/portfolio-seminar-group.webp",
     alt: "Большая детская группа с тренерами в зале",
     featured: false,
   },
@@ -463,7 +463,7 @@ export const portfolioPhotos = [
     tag: "Архив",
     title: "Команда с золотом",
     text: "Исторический снимок: спортсмены в белых ги с медалями после турнира.",
-    image: "/tora/media/portfolio-archive-medals.webp",
+    image: "/media/portfolio-archive-medals.webp",
     alt: "Архивное фото команды каратэ с золотыми медалями",
     featured: false,
   },
@@ -472,7 +472,7 @@ export const portfolioPhotos = [
     tag: "Додзё",
     title: "Гости зала",
     text: "Алексей Юрков и гость академии — тёплый кадр после тренировки.",
-    image: "/tora/media/portfolio-dojo-guests.webp",
+    image: "/media/portfolio-dojo-guests.webp",
     alt: "Алексей Юрков с гостем в зале академии",
     featured: false,
   },
@@ -484,8 +484,8 @@ export const portfolioVideos = [
     tag: "Тренировка",
     title: "Тренировка гранд-мастеров",
     text: "Центральная школа каратэ, 2026",
-    src: "/tora/media/video-grandmasters-cshk-2026.mp4",
-    poster: "/tora/media/video-grandmasters-cshk-2026.webp",
+    src: "/media/video-grandmasters-cshk-2026.mp4",
+    poster: "/media/video-grandmasters-cshk-2026.webp",
     featured: true,
   },
   {
@@ -493,8 +493,8 @@ export const portfolioVideos = [
     tag: "Чемпионат мира",
     title: "Сборная России в Токио",
     text: "Выступление на чемпионате мира по каратэ. Япония, 2016",
-    src: "/tora/media/video-team-tokyo-2016.mp4",
-    poster: "/tora/media/video-team-tokyo-2016.webp",
+    src: "/media/video-team-tokyo-2016.mp4",
+    poster: "/media/video-team-tokyo-2016.webp",
     featured: false,
   },
   {
@@ -502,8 +502,8 @@ export const portfolioVideos = [
     tag: "Детская группа",
     title: "Тренировка в школе имени Пушкина",
     text: "Детская группа академии, дополнительный зал",
-    src: "/tora/media/video-kids-pushkin.mp4",
-    poster: "/tora/media/video-kids-pushkin.webp",
+    src: "/media/video-kids-pushkin.mp4",
+    poster: "/media/video-kids-pushkin.webp",
     featured: false,
   },
 ] as const;

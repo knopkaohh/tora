@@ -1,8 +1,8 @@
-export const BASE_PATH = "/tora";
+export const BASE_PATH = "";
 
 export function asset(path: string) {
-  if (!path || path.startsWith("http") || path.startsWith("data:") || path.startsWith(BASE_PATH)) {
+  if (!path || path.startsWith("http") || path.startsWith("data:") || path.startsWith("/")) {
     return path;
   }
-  return `${BASE_PATH}${path.startsWith("/") ? path : `/${path}`}`;
+  return `/${path}`;
 }

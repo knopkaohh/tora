@@ -18,7 +18,7 @@ export default function PricingPage() {
         kicker="Стоимость"
         title="Сначала зал. Потом абонемент."
         text="Пробная тренировка бесплатная. Дальше — 7 000 ₽ за два занятия в неделю в любой группе."
-        image="/tora/media/cup-2024.webp"
+        image="/media/cup-2024.webp"
         alt="Победитель турнира с кубком"
       />
 

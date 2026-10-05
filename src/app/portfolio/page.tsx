@@ -22,7 +22,7 @@ export default function PortfolioPage() {
         kicker="Портфолио"
         title="Кадры пути"
         text="Зал, пояса, турниры и живое видео: гранд-мастера, сборная в Токио и детская группа."
-        image="/tora/media/portfolio-dojo-kids.webp"
+        image="/media/portfolio-dojo-kids.webp"
         alt="Детская группа и тренеры в зале после тренировки"
       />
 

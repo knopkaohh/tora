@@ -1,24 +1,25 @@
 Академия Окинавского Каратэ
-Адрес после заливки: https://birka-calculator.ru/tora
+Домен: https://тигр-каратэ.рф
 
 Как залить на хост
-1. Распакуйте архив tora-birka-calculator.zip в корень сайта
+1. Сделайте копию текущего сайта на хосте (старый Тильда-сайт).
+2. Распакуйте архив tigr-karate-site.zip в КОРЕНЬ сайта
    (обычно public_html или www).
-2. Должна появиться папка tora. Внутри неё — index.html, media, _next.
-3. Обязательно загрузите папку _next (стили и скрипты).
-   Если FTP её не видно, включите показ скрытых файлов.
-4. Проверьте ссылку: https://birka-calculator.ru/tora
-   или https://birka-calculator.ru/tora/
-
-Страницы:
-  https://birka-calculator.ru/tora/about/
-  https://birka-calculator.ru/tora/schedule/
-  https://birka-calculator.ru/tora/locations/
-  https://birka-calculator.ru/tora/trainers/
-  https://birka-calculator.ru/tora/portfolio/
-  https://birka-calculator.ru/tora/pricing/
-  https://birka-calculator.ru/tora/contacts/
+3. В корне должны лежать рядом:
+     index.html
+     media
+     _next
+     about, trainers, portfolio, schedule, locations, pricing, contacts
+     .htaccess
+4. Не кладите всё это внутрь папки tora — сайт должен открываться
+   сразу как https://тигр-каратэ.рф/
+5. Обязательно загрузите папку _next (стили и скрипты)
+   и папку media (фото + видео).
+   Если FTP их не видно, включите показ скрытых файлов.
+6. Проверьте:
+     https://тигр-каратэ.рф/
+     https://тигр-каратэ.рф/portfolio/
+     https://тигр-каратэ.рф/media/video-grandmasters-cshk-2026.mp4
 
 Это обычный статический сайт: PHP и база не нужны.
-Если Apache, файл .htaccess уже лежит в папке tora.
-Не кладите содержимое tora в корень сайта — только саму папку tora.
+Фото и видео лежат в media и открываются с того же домена.
