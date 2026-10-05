@@ -365,7 +365,7 @@ export const trainers = [
     id: "yurkov",
     role: "Генеральный директор Академии Окинавского Каратэ",
     name: "Алексей Юрков",
-    meta: "25 лет практики · Москва",
+    meta: "37 лет практики · Москва",
     image: "/tora/media/yurkov.webp",
     alt: "Алексей Юрков — генеральный директор",
     ranks: [
@@ -418,6 +418,93 @@ export const trainers = [
       { year: "2025", title: "Призёр Кубка Anta (ката)", place: "Россия, Москва" },
       { year: "2025", title: "Чемпион и призёр фестиваля боевых искусств «Наша победа»", place: "Россия, Москва" },
     ],
+  },
+] as const;
+
+export const portfolioPhotos = [
+  {
+    id: "dojo-kids",
+    tag: "Зал",
+    title: "После занятия в додзё",
+    text: "Детская группа с тренерами: цветные пояса, белые ги и два шпагата на синем татами.",
+    image: "/tora/media/portfolio-dojo-kids.webp",
+    alt: "Детская группа и тренеры в зале после тренировки",
+    featured: true,
+  },
+  {
+    id: "first-diplomas",
+    tag: "Старт",
+    title: "Первые дипломы",
+    text: "Самые младшие на пьедестале: дипломы первенства и первая медаль.",
+    image: "/tora/media/portfolio-first-diplomas.webp",
+    alt: "Трое детей в ги с дипломами и медалью на пьедестале",
+    featured: false,
+  },
+  {
+    id: "masters-pair",
+    tag: "Техника",
+    title: "Работа мастеров в паре",
+    text: "Разбор приёма в зале: чёрное ги с иероглифом «тигр» и белое ги Центральной школы каратэ.",
+    image: "/tora/media/portfolio-masters-pair.webp",
+    alt: "Два мастера отрабатывают приём в додзё",
+    featured: false,
+  },
+  {
+    id: "seminar-group",
+    tag: "Сбор",
+    title: "Общая группа",
+    text: "Дети и тренеры после практики — большой состав клуба в одном кадре.",
+    image: "/tora/media/portfolio-seminar-group.webp",
+    alt: "Большая детская группа с тренерами в зале",
+    featured: false,
+  },
+  {
+    id: "archive-medals",
+    tag: "Архив",
+    title: "Команда с золотом",
+    text: "Исторический снимок: спортсмены в белых ги с медалями после турнира.",
+    image: "/tora/media/portfolio-archive-medals.webp",
+    alt: "Архивное фото команды каратэ с золотыми медалями",
+    featured: false,
+  },
+  {
+    id: "dojo-guests",
+    tag: "Додзё",
+    title: "Гости зала",
+    text: "Алексей Юрков и гость академии — тёплый кадр после тренировки.",
+    image: "/tora/media/portfolio-dojo-guests.webp",
+    alt: "Алексей Юрков с гостем в зале академии",
+    featured: false,
+  },
+] as const;
+
+export const portfolioVideos = [
+  {
+    id: "grandmasters",
+    tag: "Тренировка",
+    title: "Тренировка гранд-мастеров",
+    text: "Центральная школа каратэ, 2026",
+    src: "/tora/media/video-grandmasters-cshk-2026.mp4",
+    poster: "/tora/media/video-grandmasters-cshk-2026.webp",
+    featured: true,
+  },
+  {
+    id: "tokyo-2016",
+    tag: "Чемпионат мира",
+    title: "Сборная России в Токио",
+    text: "Выступление на чемпионате мира по каратэ. Япония, 2016",
+    src: "/tora/media/video-team-tokyo-2016.mp4",
+    poster: "/tora/media/video-team-tokyo-2016.webp",
+    featured: false,
+  },
+  {
+    id: "kids-pushkin",
+    tag: "Детская группа",
+    title: "Тренировка в школе имени Пушкина",
+    text: "Детская группа академии, дополнительный зал",
+    src: "/tora/media/video-kids-pushkin.mp4",
+    poster: "/tora/media/video-kids-pushkin.webp",
+    featured: false,
   },
 ] as const;
 
