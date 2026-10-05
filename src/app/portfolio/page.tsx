@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/page-hero";
+import { PortfolioTabs } from "@/components/portfolio-tabs";
 import { Reveal } from "@/components/reveal";
 import { TrialButton } from "@/components/trial-button";
 import { portfolioPhotos, portfolioVideos } from "@/lib/content";
@@ -24,6 +25,7 @@ export default function PortfolioPage() {
         text="Зал, пояса, турниры и живое видео: гранд-мастера, сборная в Токио и детская группа."
         image="/media/portfolio-dojo-kids.webp"
         alt="Детская группа и тренеры в зале после тренировки"
+        actions={<PortfolioTabs active="portfolio" />}
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">

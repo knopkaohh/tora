@@ -508,6 +508,18 @@ export const portfolioVideos = [
   },
 ] as const;
 
+export const portfolioFilms = [
+  {
+    id: "black-belt-path",
+    tag: "Фильм",
+    title: "Путь к черному поясу",
+    text: "Первый фильм академии. Смотрите прямо на сайте.",
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239017&hash=d601f7b1419e9678&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239017",
+  },
+] as const;
+
 export const marquee = [
   "Окинавское каратэ",
   "Клуб Тора",

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 export function PageHero({
   kicker,
@@ -6,12 +7,14 @@ export function PageHero({
   text,
   image,
   alt,
+  actions,
 }: {
   kicker: string;
   title: string;
   text: string;
   image: string;
   alt: string;
+  actions?: ReactNode;
 }) {
   return (
     <section className="relative isolate min-h-[78svh] overflow-hidden bg-ink text-white">
@@ -32,6 +35,7 @@ export function PageHero({
         <p className="rise mt-6 max-w-xl text-base leading-relaxed text-white/78 md:text-lg [animation-delay:220ms]">
           {text}
         </p>
+        {actions ? <div className="rise mt-8 [animation-delay:320ms]">{actions}</div> : null}
       </div>
     </section>
   );

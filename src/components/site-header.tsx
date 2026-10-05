@@ -9,6 +9,13 @@ import { TrialButton } from "@/components/trial-button";
 import { nav, phoneDisplay, phoneTel } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
+function navActive(pathname: string, href: string) {
+  const path = pathname.replace(/\/$/, "") || "/";
+  const target = href.replace(/\/$/, "") || "/";
+  if (target === "/") return path === "/";
+  return path === target || path.startsWith(`${target}/`);
+}
+
 export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -51,7 +58,7 @@ export function SiteHeader() {
           aria-label="Основное меню"
         >
           {nav.map((item) => {
-            const active = pathname === item.href;
+            const active = navActive(pathname, item.href);
             return (
               <Link
                 key={item.href}
@@ -99,7 +106,7 @@ export function SiteHeader() {
         <div id="mobile-nav" className="border-t border-ink/10 bg-canvas px-4 py-6 lg:hidden">
           <nav className="flex flex-col gap-1" aria-label="Мобильное меню">
             {nav.map((item) => {
-              const active = pathname === item.href;
+              const active = navActive(pathname, item.href);
               return (
                 <Link
                   key={item.href}
