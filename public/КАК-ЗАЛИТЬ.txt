@@ -15,6 +15,7 @@
   https://birka-calculator.ru/tora/schedule/
   https://birka-calculator.ru/tora/locations/
   https://birka-calculator.ru/tora/trainers/
+  https://birka-calculator.ru/tora/portfolio/
   https://birka-calculator.ru/tora/pricing/
   https://birka-calculator.ru/tora/contacts/
 

@@ -47,7 +47,7 @@ export function SiteHeader() {
         </Link>
 
         <nav
-          className="ml-auto hidden min-w-0 flex-1 flex-nowrap items-center justify-end gap-x-3 xl:gap-x-5 2xl:justify-center lg:flex"
+          className="ml-auto hidden min-w-0 flex-1 flex-nowrap items-center justify-end gap-x-2.5 xl:gap-x-4 2xl:gap-x-5 2xl:justify-center lg:flex"
           aria-label="Основное меню"
         >
           {nav.map((item) => {
@@ -72,7 +72,7 @@ export function SiteHeader() {
           <a
             href={`tel:${phoneTel}`}
             className={cn(
-              "whitespace-nowrap text-[0.8rem] font-medium tracking-normal",
+              "hidden whitespace-nowrap text-[0.8rem] font-medium tracking-normal xl:inline",
               solid ? "text-ink" : "text-white",
             )}
           >
