@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 };
 
 const photoSlots = [
-  { id: "photo-1", label: "Зал", span: "sm:col-span-2 lg:row-span-2 min-h-[320px] lg:min-h-[420px]" },
-  { id: "photo-2", label: "Тренировка", span: "min-h-[220px]" },
-  { id: "photo-3", label: "Турнир", span: "min-h-[220px]" },
-  { id: "photo-4", label: "Ката", span: "min-h-[220px]" },
-  { id: "photo-5", label: "Команда", span: "min-h-[220px]" },
-  { id: "photo-6", label: "Пояса", span: "min-h-[220px]" },
+  { id: "photo-1", label: "Зал" },
+  { id: "photo-2", label: "Тренировка" },
+  { id: "photo-3", label: "Турнир" },
+  { id: "photo-4", label: "Ката" },
+  { id: "photo-5", label: "Команда" },
+  { id: "photo-6", label: "Пояса" },
 ] as const;
 
 const videoSlots = [
@@ -45,10 +45,10 @@ export default function PortfolioPage() {
           </p>
         </Reveal>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {photoSlots.map((slot, index) => (
-            <Reveal key={slot.id} delay={index * 50} className={slot.span}>
-              <article className="flex h-full min-h-full flex-col justify-between rounded-[2rem] border border-dashed border-ink/15 bg-paper p-6">
+            <Reveal key={slot.id} delay={index * 50}>
+              <article className="flex min-h-[240px] flex-col justify-between rounded-[2rem] border border-dashed border-ink/15 bg-paper p-6">
                 <div className="flex size-12 items-center justify-center rounded-full bg-canvas text-signal">
                   <Camera className="size-5" aria-hidden />
                 </div>
