@@ -47,10 +47,8 @@ export default function PortfolioPage() {
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {photoSlots.map((slot, index) => (
-            <Reveal key={slot.id} delay={index * 50}>
-              <article
-                className={`flex h-full flex-col justify-between rounded-[2rem] border border-dashed border-ink/15 bg-paper p-6 ${slot.span}`}
-              >
+            <Reveal key={slot.id} delay={index * 50} className={slot.span}>
+              <article className="flex h-full min-h-full flex-col justify-between rounded-[2rem] border border-dashed border-ink/15 bg-paper p-6">
                 <div className="flex size-12 items-center justify-center rounded-full bg-canvas text-signal">
                   <Camera className="size-5" aria-hidden />
                 </div>
