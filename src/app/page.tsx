@@ -220,14 +220,14 @@ export default function HomePage() {
           <p className="text-[0.72rem] tracking-[0.28em] text-signal uppercase">Учителя пути</p>
           <h2 className="mt-3 font-heading text-4xl md:text-5xl">Наши тренеры</h2>
         </Reveal>
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {trainers.map((trainer) => (
             <Reveal key={trainer.id}>
-              <Link href={`/trainers#${trainer.id}`} className="group grid overflow-hidden rounded-[2rem] bg-paper md:grid-cols-[0.8fr_1.2fr]">
-                <div className="photo-frame relative min-h-72">
-                  <Image src={trainer.image} alt={trainer.alt} fill className="object-cover object-top" sizes="(min-width: 768px) 20vw, 100vw" />
+              <Link href={`/trainers#${trainer.id}`} className="group overflow-hidden rounded-[2rem] bg-paper">
+                <div className="photo-frame relative aspect-[3/4]">
+                  <Image src={trainer.image} alt={trainer.alt} fill className="object-cover object-top" sizes="(min-width: 1280px) 22vw, (min-width: 640px) 40vw, 100vw" />
                 </div>
-                <div className="flex flex-col justify-center p-6 md:p-8">
+                <div className="flex flex-col justify-center p-6">
                   <p className="text-xs tracking-[0.16em] text-signal uppercase">{trainer.role}</p>
                   <h3 className="mt-3 font-heading text-3xl">{trainer.name}</h3>
                   <p className="mt-2 text-sm text-ink/60">{trainer.meta}</p>
