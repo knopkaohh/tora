@@ -41,7 +41,7 @@
 Достаточно заменить:
   - все html-страницы (index.html и папки about, trainers, …)
   - папку _next
-  - media/yurkov.webp  (новое фото Алексея)
+  - media/yurkov.webp, media/kostin.webp, media/korovin-yurkov.webp
   - .htaccess
 
 Для этого есть второй архив: tigr-karate-update.zip
