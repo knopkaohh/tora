@@ -185,6 +185,14 @@
   place-items: center;
   background: #f7f8fa;
   transition: opacity 0.6s ease, visibility 0.6s ease;
+  animation: loader-auto-hide 0.55s ease 2.2s forwards;
+}
+
+@keyframes loader-auto-hide {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .loader-screen.is-out {

@@ -9,7 +9,7 @@ import { schedule } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Расписание",
   description:
-    "Расписание Академии Окинавского Каратэ: детская группа 18:00–19:00, средняя 19:00–20:00, м. Савёловская — Дмитровская.",
+    "Расписание Академии Окинавского Каратэ: детская группа 18:00–19:00, средняя 19:00–20:30, м. Савёловская — Дмитровская.",
 };
 
 export default function SchedulePage() {
@@ -19,7 +19,7 @@ export default function SchedulePage() {
         kicker="Расписание"
         title="Вечер в додзё"
         text="Две опубликованные группы в основном зале у метро Савёловская — Дмитровская и взрослая группа по набору. Дни недели подтверждаем, когда записываем на пробное."
-        image="/tora/media/kata-train.webp"
+        image="/media/kata-train.webp"
         alt="Тренировка ката"
       />
 
@@ -64,7 +64,7 @@ export default function SchedulePage() {
           </Reveal>
           <Reveal delay={100}>
             <div className="photo-frame relative aspect-[4/5] overflow-hidden rounded-[2rem]">
-              <Image src="/tora/media/weapons.jpg" alt="Тренировка с оружием" fill className="object-cover" sizes="(min-width: 768px) 40vw, 100vw" />
+              <Image src="/media/weapons.jpg" alt="Тренировка с оружием" fill className="object-cover" sizes="(min-width: 768px) 40vw, 100vw" />
             </div>
           </Reveal>
         </div>

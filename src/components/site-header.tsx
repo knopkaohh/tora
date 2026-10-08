@@ -9,10 +9,18 @@ import { TrialButton } from "@/components/trial-button";
 import { nav, phoneDisplay, phoneTel } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
+function navActive(pathname: string, href: string) {
+  const path = pathname.replace(/\/$/, "") || "/";
+  const target = href.replace(/\/$/, "") || "/";
+  if (target === "/") return path === "/";
+  return path === target || path.startsWith(`${target}/`);
+}
+
 export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isHome = (pathname.replace(/\/$/, "") || "/") === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -24,13 +32,13 @@ export function SiteHeader() {
     };
   }, []);
 
-  const solid = scrolled || open;
+  const solid = scrolled || open || isHome;
 
   return (
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-40 transition-colors duration-300",
-        solid ? "bg-canvas/92 text-ink shadow-[0_1px_0_rgba(2,31,64,0.08)] backdrop-blur-md" : "text-white",
+        solid ? "bg-canvas/95 text-ink shadow-[0_1px_0_rgba(2,31,64,0.08)] backdrop-blur-md" : "text-white",
       )}
     >
       <div className="mx-auto flex h-16 max-w-[90rem] items-center gap-3 px-4 lg:h-[4.5rem] lg:gap-5 lg:px-6">
@@ -47,18 +55,18 @@ export function SiteHeader() {
         </Link>
 
         <nav
-          className="ml-auto hidden min-w-0 flex-1 flex-nowrap items-center justify-end gap-x-3 xl:gap-x-5 2xl:justify-center lg:flex"
+          className="ml-auto hidden min-w-0 flex-1 flex-nowrap items-center justify-end gap-x-2.5 xl:gap-x-4 2xl:gap-x-5 2xl:justify-center lg:flex"
           aria-label="Основное меню"
         >
           {nav.map((item) => {
-            const active = pathname === item.href;
+            const active = navActive(pathname, item.href);
             return (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
                   "shrink-0 whitespace-nowrap text-[0.68rem] tracking-[0.08em] uppercase transition-colors",
-                  active ? "text-signal" : solid ? "text-ink/75 hover:text-ink" : "text-white/80 hover:text-white",
+                  active ? "text-signal" : solid ? "text-ink hover:text-ink" : "text-white/80 hover:text-white",
                 )}
                 aria-current={active ? "page" : undefined}
               >
@@ -72,7 +80,7 @@ export function SiteHeader() {
           <a
             href={`tel:${phoneTel}`}
             className={cn(
-              "whitespace-nowrap text-[0.8rem] font-medium tracking-normal",
+              "hidden whitespace-nowrap text-[0.8rem] font-medium tracking-normal xl:inline",
               solid ? "text-ink" : "text-white",
             )}
           >
@@ -99,7 +107,7 @@ export function SiteHeader() {
         <div id="mobile-nav" className="border-t border-ink/10 bg-canvas px-4 py-6 lg:hidden">
           <nav className="flex flex-col gap-1" aria-label="Мобильное меню">
             {nav.map((item) => {
-              const active = pathname === item.href;
+              const active = navActive(pathname, item.href);
               return (
                 <Link
                   key={item.href}

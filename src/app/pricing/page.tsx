@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Стоимость",
   description:
-    "Пробное занятие бесплатно. Абонемент Академии Окинавского Каратэ — 7 000 ₽ за два занятия в неделю.",
+    "Пробное занятие бесплатно. Абонемент Академии Окинавского Каратэ — 7 000 ₽ за 8 занятий в месяц.",
 };
 
 export default function PricingPage() {
@@ -17,8 +17,8 @@ export default function PricingPage() {
       <PageHero
         kicker="Стоимость"
         title="Сначала зал. Потом абонемент."
-        text="Пробная тренировка бесплатная. Дальше — 7 000 ₽ за два занятия в неделю в любой группе."
-        image="/tora/media/cup-2024.webp"
+        text="Пробная тренировка бесплатная. Дальше — 7 000 ₽ за 8 занятий в месяц в любой группе."
+        image="/media/cup-2024.webp"
         alt="Победитель турнира с кубком"
       />
 
@@ -64,7 +64,7 @@ export default function PricingPage() {
           <div>
             <h2 className="font-heading text-4xl">Что вы покупаете, кроме часа на татами</h2>
             <p className="mt-4 text-sm leading-relaxed text-ink/70">
-              Абонемент — это место в группе, тренер с даном и путь от первого занятия до пояса или турнира. Два занятия в неделю стоят 7 000 ₽.
+              Абонемент — это место в группе, тренер с даном и путь от первого занятия до пояса или турнира. Восемь занятий в месяц стоят 7 000 ₽.
             </p>
           </div>
           <ul className="space-y-4">
@@ -85,7 +85,7 @@ export default function PricingPage() {
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6">
         <div className="flex flex-col items-start justify-between gap-6 rounded-[2rem] bg-ink px-6 py-10 text-white md:flex-row md:items-center md:px-10">
           <div>
-            <h2 className="font-heading text-3xl md:text-4xl">7 000 ₽ · два занятия в неделю</h2>
+            <h2 className="font-heading text-3xl md:text-4xl">7 000 ₽ · 8 занятий в месяц</h2>
             <p className="mt-2 text-sm text-white/70">Позвоните {phoneDisplay} — подтвердим группу и зал.</p>
           </div>
           <a href={`tel:${phoneTel}`} className="inline-flex h-12 items-center rounded-full bg-white px-6 text-sm font-medium text-ink">

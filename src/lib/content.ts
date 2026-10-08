@@ -2,9 +2,9 @@ export const phoneDisplay = "+7 495 003-777-3";
 export const phoneTel = "+74950037773";
 
 export const logos = [
-  { src: "/tora/media/logo.svg", alt: "Клуб Тора", name: "Тора" },
-  { src: "/tora/media/logo-koshiki.png", alt: "Koshiki Karate", name: "Косики каратэ" },
-  { src: "/tora/media/logo-cshk.png", alt: "Центральная школа каратэ", name: "ЦШК" },
+  { src: "/media/logo.svg", alt: "Клуб Тора", name: "Тора" },
+  { src: "/media/logo-cshk.png", alt: "Центральная школа каратэ", name: "ЦШК" },
+  { src: "/media/logo-koshiki.png", alt: "Koshiki Karate", name: "Косики каратэ" },
 ] as const;
 
 export const locations = [
@@ -56,6 +56,7 @@ export const nav = [
   { href: "/schedule", label: "Расписание" },
   { href: "/locations", label: "Локации" },
   { href: "/trainers", label: "Тренеры" },
+  { href: "/portfolio", label: "Портфолио" },
   { href: "/pricing", label: "Стоимость" },
   { href: "/contacts", label: "Контакты" },
 ] as const;
@@ -103,7 +104,7 @@ export const competitions = [
     tag: "Международный кубок",
     title: "Кубок Николая Японского",
     place: "Москва",
-    image: "/tora/media/cup-2024.webp",
+    image: "/media/cup-2024.webp",
     alt: "Победитель турнира с кубком",
   },
   {
@@ -113,7 +114,7 @@ export const competitions = [
     tag: "Командный зачёт",
     title: "Команда Тора — лучшие",
     place: "Первенство",
-    image: "/tora/media/team-2024.webp",
+    image: "/media/team-2024.webp",
     alt: "Команда клуба на пьедестале",
   },
   {
@@ -123,7 +124,7 @@ export const competitions = [
     tag: "ANTA CUP",
     title: "Кубок ANTA — 3 медали",
     place: "Москва",
-    image: "/tora/media/podium-2020.webp",
+    image: "/media/podium-2020.webp",
     alt: "Три призёра на пьедестале",
   },
   {
@@ -133,7 +134,7 @@ export const competitions = [
     tag: "Anta Cup · KATA",
     title: "Чемпионат мира",
     place: "Международный",
-    image: "/tora/media/kata-2025.webp",
+    image: "/media/kata-2025.webp",
     alt: "Победитель в категории ката",
   },
   {
@@ -143,7 +144,7 @@ export const competitions = [
     tag: "Шихан-Каратэ",
     title: "Мировое первенство",
     place: "Япония",
-    image: "/tora/media/group-2017.webp",
+    image: "/media/group-2017.webp",
     alt: "Группа спортсменов клуба",
   },
   {
@@ -153,7 +154,7 @@ export const competitions = [
     tag: "Сборная России",
     title: "Чемпионат мира",
     place: "Токио",
-    image: "/tora/media/team-russia.webp",
+    image: "/media/team-russia.webp",
     alt: "Сборная России по каратэ с детьми",
   },
   {
@@ -163,7 +164,7 @@ export const competitions = [
     tag: "ANTA cup",
     title: "Кубок ANTA",
     place: "Япония",
-    image: "/tora/media/kata-train.webp",
+    image: "/media/kata-train.webp",
     alt: "Тренировка ката",
   },
   {
@@ -173,7 +174,7 @@ export const competitions = [
     tag: "По косики каратэ",
     title: "Кубок России",
     place: "Москва",
-    image: "/tora/media/weapons.jpg",
+    image: "/media/weapons.jpg",
     alt: "Тренировка с оружием",
   },
 ];
@@ -184,7 +185,7 @@ export const trainings = [
     note: "по косики каратэ",
     title: "Кубок России",
     place: "Москва",
-    image: "/tora/media/weapons.jpg",
+    image: "/media/weapons.jpg",
     alt: "Тренировка с оружием",
   },
   {
@@ -192,7 +193,7 @@ export const trainings = [
     note: "базовая техника",
     title: "Кубок ANTA",
     place: "Додзё",
-    image: "/tora/media/kata-train.webp",
+    image: "/media/kata-train.webp",
     alt: "Тренировка ката",
   },
   {
@@ -200,7 +201,7 @@ export const trainings = [
     note: "мастера",
     title: "Взрослая группа",
     place: "ЦШК",
-    image: "/tora/media/seniors.webp",
+    image: "/media/seniors.webp",
     alt: "Тренировка старших учеников",
   },
   {
@@ -208,7 +209,7 @@ export const trainings = [
     note: "все возрасты",
     title: "Сдача на пояса",
     place: "Додзё",
-    image: "/tora/media/belts.webp",
+    image: "/media/belts.webp",
     alt: "Группа с тренерами",
   },
   {
@@ -216,7 +217,7 @@ export const trainings = [
     note: "ANTA CUP",
     title: "Чемпионат мира",
     place: "Международный",
-    image: "/tora/media/kata-2025.webp",
+    image: "/media/kata-2025.webp",
     alt: "Выступление в ката",
   },
   {
@@ -224,7 +225,7 @@ export const trainings = [
     note: "сборная России",
     title: "Чемпионат мира",
     place: "Токио",
-    image: "/tora/media/team-russia.webp",
+    image: "/media/team-russia.webp",
     alt: "Сборная России по каратэ",
   },
 ];
@@ -271,7 +272,7 @@ export const schedule = [
     text: "Первые стойки, базовая техника и привычка держать внимание. Темп спокойный, характер уже серьёзный.",
   },
   {
-    time: "19:00 — 20:00",
+    time: "19:00 — 20:30",
     title: "Средняя группа",
     age: "12–18 лет",
     place: "м. Савёловская — м. Дмитровская",
@@ -302,37 +303,37 @@ export const offers = [
   {
     name: "Детская группа",
     price: "7 000 ₽",
-    hint: "6–12 лет · 2 занятия в неделю",
+    hint: "6–12 лет · 8 занятий в месяц",
     featured: false,
     points: [
       "Основной зал: ул. Складочная, д. 6с5",
       "Дисциплина и базовая техника",
       "Пояса и клубные старты",
-      "Абонемент — 7 000 ₽ за два занятия в неделю",
+      "Абонемент — 7 000 ₽ за 8 занятий в месяц",
     ],
   },
   {
-    name: "Подростки",
+    name: "Средняя группа",
     price: "7 000 ₽",
-    hint: "12–18 лет · 2 занятия в неделю",
+    hint: "12–18 лет · 8 занятий в месяц",
     featured: false,
     points: [
       "Ката, кумитэ, сдача на пояса",
       "Подготовка к турнирам клуба",
       "Тренеры сборного уровня",
-      "Абонемент — 7 000 ₽ за два занятия в неделю",
+      "Абонемент — 7 000 ₽ за 8 занятий в месяц",
     ],
   },
   {
-    name: "Взрослые",
+    name: "Взрослая группа",
     price: "7 000 ₽",
-    hint: "2 занятия в неделю",
+    hint: "8 занятий в месяц",
     featured: false,
     points: [
       "Традиционное окинавское каратэ",
       "Техника и работа над характером",
       "Можно прийти после долгого перерыва",
-      "Абонемент — 7 000 ₽ за два занятия в неделю",
+      "Абонемент — 7 000 ₽ за 8 занятий в месяц",
     ],
   },
 ];
@@ -343,10 +344,10 @@ export const trainers = [
     role: "Президент Академии Окинавского Каратэ",
     name: "Николай Коровин",
     meta: "35 лет практики · Москва",
-    image: "/tora/media/korovin.webp",
+    image: "/media/korovin.webp",
     alt: "Николай Коровин — президент Академии",
     ranks: [
-      "Мастер спорта по каратэ и самбо",
+      "Мастер спорта России по каратэ и самбо",
       "7 дан Окинава Сёриндзирю каратэ-до",
       "4 дан Годзю-рю",
       "Мастер боевых искусств России",
@@ -364,26 +365,158 @@ export const trainers = [
     id: "yurkov",
     role: "Генеральный директор Академии Окинавского Каратэ",
     name: "Алексей Юрков",
-    meta: "25 лет практики · Москва",
-    image: "/tora/media/yurkov.webp",
+    meta: "37 лет практики · Москва",
+    image: "/media/yurkov.webp",
     alt: "Алексей Юрков — генеральный директор",
     ranks: [
-      "Мастер спорта по каратэ",
+      "Мастер спорта России по каратэ",
       "4-й дан косики каратэ",
       "4-й дан Сёриндзирю каратэ-до",
     ],
     quote: null,
     wins: [
-      { year: "1993", title: "Призёр чемпионата Москвы по косики каратэ", place: "Россия, Москва" },
       { year: "1994", title: "Чемпион России по косики каратэ", place: "Россия, Ногинск" },
       { year: "1995", title: "Чемпион России по косики каратэ", place: "Россия, Москва" },
-      { year: "1996", title: "Чемпион международного чемпионата по косики каратэ", place: "Дания, Копенгаген" },
+      { year: "1996", title: "Чемпион кубка Мира по косики каратэ", place: "Дания, Копенгаген" },
       { year: "1996", title: "Чемпион России по косики каратэ", place: "Россия, Москва" },
       { year: "1996", title: "Призёр чемпионата мира по косики каратэ", place: "Япония, Токио" },
       { year: "1999", title: "Чемпион Европы по косики каратэ", place: "Швейцария, Базель" },
       { year: "2010", title: "Чемпион России по бункай ката", place: "Россия, Москва" },
       { year: "2026", title: "Призёр фестиваля боевых искусств «Наша победа»", place: "Россия, Москва" },
     ],
+  },
+  {
+    id: "kostin",
+    role: "Старший тренер клуба «Тигр»",
+    name: "Даниил Костин",
+    meta: "1 дан · Москва",
+    image: "/media/kostin.webp",
+    alt: "Даниил Костин — старший тренер клуба «Тигр»",
+    ranks: [
+      "Чёрный пояс, 1-й дан косики каратэ",
+      "Чёрный пояс, 1-й дан окинава каратэ",
+    ],
+    quote: null,
+    wins: [
+      { year: "2016", title: "Призёр городских соревнований", place: "Россия, Москва" },
+      { year: "2017", title: "Чемпион и призёр первенства Москвы", place: "Россия, Москва" },
+      { year: "2018", title: "Чемпион первенства Москвы", place: "Россия, Москва" },
+      { year: "2018", title: "Призёр всероссийских соревнований", place: "Россия" },
+      { year: "2019", title: "Призёр Кубка России", place: "Россия" },
+      { year: "2020", title: "Обладатель Кубка Николая Японского", place: "Россия, Пушкино" },
+      { year: "2021", title: "Призёр первенства России", place: "Россия" },
+      { year: "2022", title: "Призёр первенства России", place: "Россия" },
+      { year: "2022", title: "Призёр Кубка России", place: "Россия" },
+      { year: "2023", title: "Чемпион первенства России", place: "Россия" },
+      { year: "2023", title: "Призёр Кубка Николая Японского", place: "Россия, Пушкино" },
+      { year: "2023", title: "Призёр Кубка России", place: "Россия" },
+      { year: "2024", title: "Призёр Кубка Николая Японского", place: "Россия, Пушкино" },
+      { year: "2024", title: "Призёр первенства России", place: "Россия" },
+      { year: "2025", title: "Призёр Кубка Николая Японского", place: "Россия, Пушкино" },
+      { year: "2025", title: "Призёр Кубка Николая Японского в двух категориях (ката)", place: "Россия, Пушкино" },
+      { year: "2025", title: "Призёр Кубка Anta", place: "Россия, Москва" },
+      { year: "2025", title: "Призёр Кубка Anta (ката)", place: "Россия, Москва" },
+      { year: "2025", title: "Чемпион и призёр фестиваля боевых искусств «Наша победа»", place: "Россия, Москва" },
+    ],
+  },
+] as const;
+
+export const portfolioPhotos = [
+  {
+    id: "dojo-kids",
+    tag: "Зал",
+    title: "После занятия в додзё",
+    text: "Детская группа с тренерами: цветные пояса, белые ги и два шпагата на синем татами.",
+    image: "/media/portfolio-dojo-kids.webp",
+    alt: "Детская группа и тренеры в зале после тренировки",
+    featured: true,
+  },
+  {
+    id: "first-diplomas",
+    tag: "Старт",
+    title: "Первые дипломы",
+    text: "Самые младшие на пьедестале: дипломы первенства и первая медаль.",
+    image: "/media/portfolio-first-diplomas.webp",
+    alt: "Трое детей в ги с дипломами и медалью на пьедестале",
+    featured: false,
+  },
+  {
+    id: "masters-pair",
+    tag: "Техника",
+    title: "Работа мастеров в паре",
+    text: "Разбор приёма в зале: чёрное ги с иероглифом «тигр» и белое ги Центральной школы каратэ.",
+    image: "/media/portfolio-masters-pair.webp",
+    alt: "Два мастера отрабатывают приём в додзё",
+    featured: false,
+  },
+  {
+    id: "seminar-group",
+    tag: "Сбор",
+    title: "Общая группа",
+    text: "Дети и тренеры после практики — большой состав клуба в одном кадре.",
+    image: "/media/portfolio-seminar-group.webp",
+    alt: "Большая детская группа с тренерами в зале",
+    featured: false,
+  },
+  {
+    id: "archive-medals",
+    tag: "Архив",
+    title: "Команда с золотом",
+    text: "Исторический снимок: спортсмены в белых ги с медалями после турнира.",
+    image: "/media/portfolio-archive-medals.webp",
+    alt: "Архивное фото команды каратэ с золотыми медалями",
+    featured: false,
+  },
+  {
+    id: "dojo-guests",
+    tag: "Додзё",
+    title: "Гости зала",
+    text: "Алексей Юрков и гость академии — тёплый кадр после тренировки.",
+    image: "/media/portfolio-dojo-guests.webp",
+    alt: "Алексей Юрков с гостем в зале академии",
+    featured: false,
+  },
+] as const;
+
+export const portfolioVideos = [
+  {
+    id: "grandmasters",
+    tag: "Тренировка",
+    title: "Тренировка гранд-мастеров",
+    text: "Центральная школа каратэ, 2026",
+    src: "/media/video-grandmasters-cshk-2026.mp4",
+    poster: "/media/video-grandmasters-cshk-2026.webp",
+    featured: true,
+  },
+  {
+    id: "tokyo-2016",
+    tag: "Чемпионат мира",
+    title: "Сборная России в Токио",
+    text: "Выступление на чемпионате мира по каратэ. Япония, 2016",
+    src: "/media/video-team-tokyo-2016.mp4",
+    poster: "/media/video-team-tokyo-2016.webp",
+    featured: false,
+  },
+  {
+    id: "kids-pushkin",
+    tag: "Детская группа",
+    title: "Тренировка в школе имени Пушкина",
+    text: "Детская группа академии, дополнительный зал",
+    src: "/media/video-kids-pushkin.mp4",
+    poster: "/media/video-kids-pushkin.webp",
+    featured: false,
+  },
+] as const;
+
+export const portfolioFilms = [
+  {
+    id: "black-belt-path",
+    tag: "Фильм",
+    title: "Путь к черному поясу",
+    text: "Первый фильм академии. Смотрите прямо на сайте.",
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239017&hash=d601f7b1419e9678&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239017",
   },
 ] as const;
 

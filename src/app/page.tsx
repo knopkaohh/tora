@@ -19,14 +19,14 @@ export default function HomePage() {
     <>
       <section className="relative isolate min-h-[100svh] overflow-hidden bg-ink text-white">
         <Image
-          src="/tora/media/hero.png"
+          src="/media/hero.png"
           alt="Тренировка в зале Академии Окинавского Каратэ"
           fill
           priority
-          className="hero-drift object-cover object-[70%_center]"
+          className="hero-drift object-cover object-[72%_center] md:object-[82%_center]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/25" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,31,64,0.12)_0%,rgba(2,31,64,0.18)_42%,rgba(2,31,64,0.78)_100%)] md:bg-[linear-gradient(90deg,#021f40_0%,rgba(2,31,64,0.88)_16%,rgba(2,31,64,0.4)_32%,transparent_48%)]" />
         <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-4 pt-32 pb-16 md:px-6 md:pb-20">
           <p className="rise text-[0.72rem] tracking-[0.34em] text-white/70 uppercase">
             空手道 · традиции Окинавы
@@ -116,12 +116,12 @@ export default function HomePage() {
             </dl>
           </Reveal>
           <Reveal delay={120}>
-            <div className="photo-frame relative aspect-[4/5] overflow-hidden rounded-[2rem]">
+            <div className="photo-frame relative aspect-[5/4] overflow-hidden rounded-[2rem]">
               <Image
-                src="/tora/media/podium-2020.webp"
-                alt="Три призёра на пьедестале"
+                src="/media/korovin-yurkov.webp"
+                alt="Николай Коровин и Алексей Юрков"
                 fill
-                className="object-cover"
+                className="object-cover object-[center_20%]"
                 sizes="(min-width: 768px) 40vw, 100vw"
               />
             </div>
@@ -198,7 +198,7 @@ export default function HomePage() {
 
       <section className="relative overflow-hidden bg-ink text-white">
         <Image
-          src="/tora/media/kata-train.webp"
+          src="/media/kata-train.webp"
           alt=""
           fill
           className="object-cover opacity-30"
@@ -220,14 +220,14 @@ export default function HomePage() {
           <p className="text-[0.72rem] tracking-[0.28em] text-signal uppercase">Учителя пути</p>
           <h2 className="mt-3 font-heading text-4xl md:text-5xl">Наши тренеры</h2>
         </Reveal>
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {trainers.map((trainer) => (
             <Reveal key={trainer.id}>
-              <Link href={`/trainers#${trainer.id}`} className="group grid overflow-hidden rounded-[2rem] bg-paper md:grid-cols-[0.8fr_1.2fr]">
-                <div className="photo-frame relative min-h-72">
-                  <Image src={trainer.image} alt={trainer.alt} fill className="object-cover object-top" sizes="(min-width: 768px) 20vw, 100vw" />
+              <Link href={`/trainers#${trainer.id}`} className="group overflow-hidden rounded-[2rem] bg-paper">
+                <div className="photo-frame relative aspect-[3/4]">
+                  <Image src={trainer.image} alt={trainer.alt} fill className="object-cover object-top" sizes="(min-width: 1280px) 22vw, (min-width: 640px) 40vw, 100vw" />
                 </div>
-                <div className="flex flex-col justify-center p-6 md:p-8">
+                <div className="flex flex-col justify-center p-6">
                   <p className="text-xs tracking-[0.16em] text-signal uppercase">{trainer.role}</p>
                   <h3 className="mt-3 font-heading text-3xl">{trainer.name}</h3>
                   <p className="mt-2 text-sm text-ink/60">{trainer.meta}</p>
