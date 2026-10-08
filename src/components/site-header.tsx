@@ -20,6 +20,7 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isHome = (pathname.replace(/\/$/, "") || "/") === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -32,12 +33,17 @@ export function SiteHeader() {
   }, []);
 
   const solid = scrolled || open;
+  const darkText = solid || isHome;
 
   return (
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-40 transition-colors duration-300",
-        solid ? "bg-canvas/92 text-ink shadow-[0_1px_0_rgba(2,31,64,0.08)] backdrop-blur-md" : "text-white",
+        solid
+          ? "bg-canvas/92 text-ink shadow-[0_1px_0_rgba(2,31,64,0.08)] backdrop-blur-md"
+          : isHome
+            ? "bg-white/80 text-ink backdrop-blur-md"
+            : "text-white",
       )}
     >
       <div className="mx-auto flex h-16 max-w-[90rem] items-center gap-3 px-4 lg:h-[4.5rem] lg:gap-5 lg:px-6">
@@ -47,7 +53,7 @@ export function SiteHeader() {
             <span className="block font-heading text-[0.7rem] tracking-[0.18em] uppercase">
               Тора
             </span>
-            <span className={cn("mt-1 block text-[0.62rem] tracking-wide", solid ? "text-ink/55" : "text-white/70")}>
+            <span className={cn("mt-1 block text-[0.62rem] tracking-wide", darkText ? "text-ink/55" : "text-white/70")}>
               Окинавское каратэ
             </span>
           </span>
@@ -65,7 +71,7 @@ export function SiteHeader() {
                 href={item.href}
                 className={cn(
                   "shrink-0 whitespace-nowrap text-[0.68rem] tracking-[0.08em] uppercase transition-colors",
-                  active ? "text-signal" : solid ? "text-ink/75 hover:text-ink" : "text-white/80 hover:text-white",
+                  active ? "text-signal" : darkText ? "text-ink/80 hover:text-ink" : "text-white/80 hover:text-white",
                 )}
                 aria-current={active ? "page" : undefined}
               >
@@ -80,7 +86,7 @@ export function SiteHeader() {
             href={`tel:${phoneTel}`}
             className={cn(
               "hidden whitespace-nowrap text-[0.8rem] font-medium tracking-normal xl:inline",
-              solid ? "text-ink" : "text-white",
+              darkText ? "text-ink" : "text-white",
             )}
           >
             {phoneDisplay}
