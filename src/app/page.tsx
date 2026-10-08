@@ -23,7 +23,7 @@ export default function HomePage() {
           alt="Тренировка в зале Академии Окинавского Каратэ"
           fill
           priority
-          className="hero-drift object-cover object-[55%_center] md:object-[82%_center]"
+          className="hero-drift object-cover object-[72%_center] md:object-[82%_center]"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,31,64,0.12)_0%,rgba(2,31,64,0.18)_42%,rgba(2,31,64,0.78)_100%)] md:bg-[linear-gradient(90deg,#021f40_0%,rgba(2,31,64,0.88)_16%,rgba(2,31,64,0.4)_32%,transparent_48%)]" />
