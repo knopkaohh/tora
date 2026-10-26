@@ -2,21 +2,23 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const tabs = [
-  { href: "/portfolio", label: "Портфолио" },
-  { href: "/portfolio/kino", label: "Кино" },
+  { id: "portfolio", href: "/portfolio", label: "Портфолио" },
+  { id: "friends", href: "/portfolio/friends", label: "Наши друзья" },
+  { id: "kino", href: "/portfolio/kino", label: "Кино" },
+  { id: "kokoro", href: "/portfolio/kokoro", label: "В поисках Кокоро" },
 ] as const;
 
 export function PortfolioTabs({
   active,
   tone = "light",
 }: {
-  active: "portfolio" | "kino";
+  active: (typeof tabs)[number]["id"];
   tone?: "light" | "dark";
 }) {
   return (
     <nav className="flex flex-wrap gap-3" aria-label="Разделы портфолио">
       {tabs.map((tab) => {
-        const current = tab.href.endsWith("/kino") ? active === "kino" : active === "portfolio";
+        const current = tab.id === active;
         return (
           <Link
             key={tab.href}
