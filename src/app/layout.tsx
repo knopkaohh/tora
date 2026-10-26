@@ -35,6 +35,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="ru"
       className={`${manrope.variable} ${unbounded.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              '(function(){try{var p=location.pathname.replace(/\\/+$/,"")||"/";if(p!=="/"||sessionStorage.getItem("tora-loaded")==="1")document.documentElement.classList.add("loader-skip");}catch(e){}})();',
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Loader />
         <SiteHeader />

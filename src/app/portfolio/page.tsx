@@ -89,7 +89,7 @@ export default function PortfolioPage() {
                   className="aspect-video w-full bg-ink"
                   controls
                   playsInline
-                  preload="metadata"
+                  preload="none"
                   poster={featuredVideo.poster}
                 >
                   <source src={featuredVideo.src} type="video/mp4" />
@@ -112,7 +112,7 @@ export default function PortfolioPage() {
                       className="aspect-video w-full bg-ink"
                       controls
                       playsInline
-                      preload="metadata"
+                      preload="none"
                       poster={item.poster}
                     >
                       <source src={item.src} type="video/mp4" />

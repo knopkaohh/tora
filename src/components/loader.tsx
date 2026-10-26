@@ -7,11 +7,21 @@ export function Loader() {
   const [phase, setPhase] = useState<"in" | "out" | "done">("in");
 
   useEffect(() => {
+    const path = window.location.pathname.replace(/\/+$/, "") || "/";
+    const seen = window.sessionStorage.getItem("tora-loaded") === "1";
+    if (seen || path !== "/") {
+      setPhase("done");
+      return;
+    }
+
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const hold = reduce ? 350 : 1600;
-    const fade = reduce ? 200 : 650;
+    const hold = reduce ? 250 : 700;
+    const fade = reduce ? 160 : 400;
     const hide = window.setTimeout(() => setPhase("out"), hold);
-    const done = window.setTimeout(() => setPhase("done"), hold + fade);
+    const done = window.setTimeout(() => {
+      setPhase("done");
+      window.sessionStorage.setItem("tora-loaded", "1");
+    }, hold + fade);
     return () => {
       window.clearTimeout(hide);
       window.clearTimeout(done);

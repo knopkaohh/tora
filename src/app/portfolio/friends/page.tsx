@@ -29,7 +29,7 @@ export default function PortfolioFriendsPage() {
           <p className="text-[0.72rem] tracking-[0.28em] text-signal uppercase">Галерея</p>
           <h2 className="mt-3 font-heading text-4xl md:text-5xl">Смотрите на сайте</h2>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-ink/70">
-            Живые встречи Алексея Юркова и друзей академии. Нажмите на кадр, чтобы открыть его крупно.
+            Живые встречи Алексея Юркова и друзей академии.
           </p>
         </Reveal>
         <FriendsGallery photos={portfolioFriends} />

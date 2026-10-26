@@ -35,7 +35,7 @@ export function PageHero({
         <p className="rise mt-6 max-w-xl text-base leading-relaxed text-white/78 md:text-lg [animation-delay:220ms]">
           {text}
         </p>
-        {actions ? <div className="rise mt-8 [animation-delay:320ms]">{actions}</div> : null}
+        {actions ? <div className="mt-8">{actions}</div> : null}
       </div>
     </section>
   );

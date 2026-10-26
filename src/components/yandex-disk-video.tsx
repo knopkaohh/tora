@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function YandexDiskVideo({
   publicUrl,
@@ -11,10 +11,29 @@ export function YandexDiskVideo({
   title: string;
   poster?: string;
 }) {
+  const rootRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(false);
   const [src, setSrc] = useState<string | null>(null);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
+    const node = rootRef.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setActive(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "240px" },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!active) return;
     const controller = new AbortController();
     const endpoint =
       "https://cloud-api.yandex.net/v1/disk/public/resources?public_key=" +
@@ -34,10 +53,10 @@ export function YandexDiskVideo({
       });
 
     return () => controller.abort();
-  }, [publicUrl]);
+  }, [active, publicUrl]);
 
   return (
-    <div className="relative aspect-video overflow-hidden bg-ink">
+    <div ref={rootRef} className="relative aspect-video overflow-hidden bg-ink">
       {src ? (
         <video
           className="absolute inset-0 h-full w-full bg-ink"
@@ -45,6 +64,7 @@ export function YandexDiskVideo({
           playsInline
           preload="none"
           poster={poster}
+          aria-label={title}
         >
           <source src={src} type="video/mp4" />
         </video>
@@ -57,7 +77,9 @@ export function YandexDiskVideo({
             <p className="text-sm text-white/85">
               {failed
                 ? "Плеер Яндекса сейчас не открылся — посмотрите по ссылке ниже."
-                : "Подключаем фильм с Яндекс Диска…"}
+                : active
+                  ? "Подключаем фильм с Яндекс Диска…"
+                  : "Фильм откроется, когда дойдёте до этого кадра."}
             </p>
           </div>
         </div>
