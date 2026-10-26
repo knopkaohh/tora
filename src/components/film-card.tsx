@@ -23,7 +23,7 @@ export function FilmCard({ film, index }: { film: SiteFilm; index: number }) {
           {film.kind === "vk" && film.embed ? (
             <VkFilmEmbed src={film.embed} title={film.title} />
           ) : (
-            <YandexDiskVideo publicUrl={film.href} title={film.title} poster={film.poster} />
+            <YandexDiskVideo publicUrl={film.href} title={film.title} />
           )}
         </div>
         <div className="px-1 pt-5">

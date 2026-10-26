@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
-import { FilmCard } from "@/components/film-card";
 import { PageHero } from "@/components/page-hero";
 import { PortfolioTabs } from "@/components/portfolio-tabs";
 import { Reveal } from "@/components/reveal";
 import { TrialButton } from "@/components/trial-button";
-import { kokoroFilms } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "В поисках Кокоро",
-  description:
-    "Серия фильмов «В поисках Кокоро». Смотрите на сайте академии — файлы открываются с Яндекс Диска.",
+  description: "Серия фильмов «В поисках Кокоро». Ролики появятся на сайте, как будут ссылки VK Видео.",
 };
 
 export default function PortfolioKokoroPage() {
@@ -18,9 +15,10 @@ export default function PortfolioKokoroPage() {
       <PageHero
         kicker="Портфолио"
         title="В поисках Кокоро"
-        text="Серия фильмов академии. Смотрите на сайте — без скачивания многогигабайтных файлов к себе на компьютер."
+        text="Серия фильмов академии. Ролики выложим сюда, как придут ссылки VK Видео."
         image="/media/friends-18.webp"
         alt="Алексей Юрков с японским мастером"
+        imageClassName="object-[center_12%]"
         actions={<PortfolioTabs active="kokoro" />}
       />
 
@@ -29,12 +27,9 @@ export default function PortfolioKokoroPage() {
           <p className="text-[0.72rem] tracking-[0.28em] text-signal uppercase">Серия</p>
           <h2 className="mt-3 font-heading text-4xl md:text-5xl">Смотрите на сайте</h2>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-ink/70">
-            Восемь частей. Нажмите play — плеер подключит ролик с Яндекс Диска. Если браузер не даст, рядом есть прямая ссылка.
+            Фильмы серии пока сняты со страницы. Как будут прямые ссылки VK Видео — вернём их сюда с превью из самих роликов.
           </p>
         </Reveal>
-        {kokoroFilms.map((film, index) => (
-          <FilmCard key={film.id} film={film} index={index} />
-        ))}
       </section>
 
       <section className="bg-ink text-white">

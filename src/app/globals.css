@@ -267,6 +267,20 @@ html.loader-skip .loader-screen {
   break-inside: avoid;
   background: #021f40;
   cursor: zoom-in;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.friends-mosaic.is-in .friends-mosaic-item {
+  animation: mosaic-in 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(var(--mosaic-i, 0) * 32ms);
+}
+
+@keyframes mosaic-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -306,5 +320,12 @@ html.loader-skip .loader-screen {
   }
   .friends-mosaic-item:hover img {
     filter: none;
+  }
+  .friends-mosaic-item {
+    opacity: 1;
+    transform: none;
+  }
+  .friends-mosaic.is-in .friends-mosaic-item {
+    animation: none;
   }
 }

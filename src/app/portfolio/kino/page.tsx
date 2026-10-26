@@ -8,8 +8,7 @@ import { portfolioFilms } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Кино",
-  description:
-    "Фильмы Академии Окинавского Каратэ: «Путь к черному поясу», фильм о Алексее Борисовиче Штурмине и «Японские дневники».",
+  description: "Фильмы Академии Окинавского Каратэ. Первый фильм — «Путь к черному поясу».",
 };
 
 export default function PortfolioKinoPage() {
@@ -19,8 +18,9 @@ export default function PortfolioKinoPage() {
         kicker="Портфолио"
         title="Кино"
         text="Длинные фильмы академии. Смотрите на сайте — без скачивания и без перехода в другое приложение, если плеер открывается."
-        image="/media/kata-train.webp"
-        alt="Тренировка ката"
+        image="/media/seniors.webp"
+        alt="Тренировка в зале академии"
+        imageClassName="object-[center_38%]"
         actions={<PortfolioTabs active="kino" />}
       />
 

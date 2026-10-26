@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { cn } from "@/lib/utils";
 
 type FriendPhoto = {
   id: string;
@@ -9,8 +10,26 @@ type FriendPhoto = {
 };
 
 export function FriendsGallery({ photos }: { photos: readonly FriendPhoto[] }) {
+  const rootRef = useRef<HTMLDivElement>(null);
+  const [shown, setShown] = useState(false);
   const [openId, setOpenId] = useState<string | null>(null);
   const current = photos.find((item) => item.id === openId) ?? null;
+
+  useEffect(() => {
+    const node = rootRef.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setShown(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -6% 0px" },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (!openId) return;
@@ -28,16 +47,16 @@ export function FriendsGallery({ photos }: { photos: readonly FriendPhoto[] }) {
 
   return (
     <>
-      <div className="friends-mosaic mt-10">
+      <div ref={rootRef} className={cn("friends-mosaic mt-10", shown && "is-in")}>
         {photos.map((item, index) => (
           <button
             key={item.id}
             type="button"
             onClick={() => setOpenId(item.id)}
             className="friends-mosaic-item"
+            style={{ "--mosaic-i": Math.min(index, 11) } as CSSProperties}
             aria-label={item.alt}
           >
-            {/* native img: mosaic needs natural height, not cropped tiles */}
             <img
               src={item.image}
               alt={item.alt}

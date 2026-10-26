@@ -21,6 +21,7 @@ export default function PortfolioFriendsPage() {
         text="Мастера, гости додзё, поездки и рукопожатия. Смотрите кадры на сайте — без скачивания."
         image="/media/friends-16.webp"
         alt="Гости академии в деревянном додзё"
+        imageClassName="object-[center_16%]"
         actions={<PortfolioTabs active="friends" />}
       />
 
