@@ -20,7 +20,7 @@ export default function PortfolioKinoPage() {
         text="Длинные фильмы академии. Смотрите на сайте — без скачивания и без перехода в другое приложение, если плеер открывается."
         image="/media/seniors.webp"
         alt="Тренировка в зале академии"
-        imageClassName="object-[center_38%]"
+        imageClassName="object-[28%_40%]"
         actions={<PortfolioTabs active="kino" />}
       />
 
