@@ -54,6 +54,9 @@
   https://тигр-каратэ.рф/schedule/
   https://тигр-каратэ.рф/trainers/
   https://тигр-каратэ.рф/portfolio/
+  https://тигр-каратэ.рф/portfolio/friends/
+  https://тигр-каратэ.рф/portfolio/kino/
+  https://тигр-каратэ.рф/portfolio/kokoro/
 
 PHP и база не нужны. Это обычные файлы.
 Если страница «старая» после заливки — Ctrl+F5 (сброс кэша браузера).

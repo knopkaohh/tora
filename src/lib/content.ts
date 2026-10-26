@@ -804,7 +804,18 @@ export const portfolioFilms = [
   },
 ] as const;
 
-export const kokoroFilms = [] as const;
+export const kokoroFilms = [
+  {
+    id: "kokoro-1",
+    tag: "Серия",
+    title: "В поисках Кокоро. Часть 1",
+    text: "Первая часть серии. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239018&hash=d1b866fdfaec099e&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239018",
+  },
+] as const;
 
 export const marquee = [
   "Окинавское каратэ",
