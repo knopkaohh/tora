@@ -802,6 +802,36 @@ export const portfolioFilms = [
       "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239017&hash=d601f7b1419e9678&hd=3",
     href: "https://vkvideo.ru/video-242044266_456239017",
   },
+  {
+    id: "shturmin-70",
+    tag: "Фильм",
+    title: "Алексей Борисович Штурмин — фильм к 70-летию",
+    text: "Фильм к юбилею. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239023&hash=0c72c59b685ac681&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239023",
+  },
+  {
+    id: "japan-diaries",
+    tag: "Фильм",
+    title: "Японские дневники",
+    text: "Путевые кадры из Японии. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239021&hash=a1bec119348dfd0e&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239021",
+  },
+  {
+    id: "baku-open-2018",
+    tag: "Фильм",
+    title: "Баку. BFRU OPEN 2018",
+    text: "Турнир в Баку. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239022&hash=411d6547fc62691a&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239022",
+  },
 ] as const;
 
 export const kokoroFilms = [
@@ -814,6 +844,16 @@ export const kokoroFilms = [
     embed:
       "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239018&hash=d1b866fdfaec099e&hd=3",
     href: "https://vkvideo.ru/video-242044266_456239018",
+  },
+  {
+    id: "kokoro-3",
+    tag: "Серия",
+    title: "В поисках Кокоро. Часть 3",
+    text: "Третья часть серии. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239025&hash=0a7810f9320a17dc&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239025",
   },
 ] as const;
 

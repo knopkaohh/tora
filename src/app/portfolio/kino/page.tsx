@@ -8,7 +8,8 @@ import { portfolioFilms } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Кино",
-  description: "Фильмы Академии Окинавского Каратэ. Первый фильм — «Путь к черному поясу».",
+  description:
+    "Фильмы Академии Окинавского Каратэ: «Путь к черному поясу», фильм к 70-летию Алексея Борисовича Штурмина, «Японские дневники» и «Баку. BFRU OPEN 2018».",
 };
 
 export default function PortfolioKinoPage() {
