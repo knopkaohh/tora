@@ -8,7 +8,7 @@ import { kokoroFilms } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "В поисках Кокоро",
-  description: "Серия фильмов «В поисках Кокоро». Части 1 и 3 смотрите на сайте.",
+  description: "Серия фильмов «В поисках Кокоро». Части 1–3 смотрите на сайте.",
 };
 
 export default function PortfolioKokoroPage() {

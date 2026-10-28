@@ -846,6 +846,16 @@ export const kokoroFilms = [
     href: "https://vkvideo.ru/video-242044266_456239018",
   },
   {
+    id: "kokoro-2",
+    tag: "Серия",
+    title: "В поисках Кокоро. Часть 2",
+    text: "Вторая часть серии. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239027&hash=70ac1d79f396a780&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239027",
+  },
+  {
     id: "kokoro-3",
     tag: "Серия",
     title: "В поисках Кокоро. Часть 3",
