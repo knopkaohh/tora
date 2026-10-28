@@ -1,4 +1,6 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 export function PageHero({
   kicker,
@@ -6,12 +8,16 @@ export function PageHero({
   text,
   image,
   alt,
+  actions,
+  imageClassName,
 }: {
   kicker: string;
   title: string;
   text: string;
   image: string;
   alt: string;
+  actions?: ReactNode;
+  imageClassName?: string;
 }) {
   return (
     <section className="relative isolate min-h-[78svh] overflow-hidden bg-ink text-white">
@@ -20,7 +26,7 @@ export function PageHero({
         alt={alt}
         fill
         priority
-        className="hero-drift object-cover"
+        className={cn("hero-drift object-cover", imageClassName)}
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/35" />
@@ -32,6 +38,7 @@ export function PageHero({
         <p className="rise mt-6 max-w-xl text-base leading-relaxed text-white/78 md:text-lg [animation-delay:220ms]">
           {text}
         </p>
+        {actions ? <div className="mt-8">{actions}</div> : null}
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ import { phoneDisplay, phoneTel } from "@/lib/content";
 const groups = [
   "Детская, 6–12 лет",
   "Средняя, 12–18 лет",
-  "Взрослая",
+  "Взрослая группа",
   "Пока не выбрали",
 ];
 

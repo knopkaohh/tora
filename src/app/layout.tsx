@@ -19,14 +19,14 @@ const unbounded = Unbounded({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://birka-calculator.ru/tora"),
+  metadataBase: new URL("https://xn----8sbajyo4bdli5j.xn--p1ai"),
   title: {
     default: "Академия Окинавского Каратэ — клуб Тора",
     template: "%s — Академия Окинавского Каратэ",
   },
   description:
     "Клуб спортивных единоборств «Тигр». Окинавское каратэ для детей, подростков и взрослых в Москве. Бесплатное пробное занятие.",
-  icons: { icon: "/tora/media/logo.svg" },
+  icons: { icon: "/media/logo.svg" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -35,6 +35,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="ru"
       className={`${manrope.variable} ${unbounded.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              '(function(){try{var p=location.pathname.replace(/\\/+$/,"")||"/";if(p!=="/"||sessionStorage.getItem("tora-loaded")==="1")document.documentElement.classList.add("loader-skip");}catch(e){}})();',
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Loader />
         <SiteHeader />

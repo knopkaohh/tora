@@ -18,7 +18,7 @@ export default function LocationsPage() {
         kicker="Локации"
         title="Три зала. Один характер."
         text="Основной зал — у метро Савёловская и Дмитровская. Дополнительный — на Писцовой. Третий — на Смоленской, в Центральной школе каратэ."
-        image="/tora/media/hero.png"
+        image="/media/hero.png"
         alt="Зал академии во время тренировки"
       />
 
@@ -62,7 +62,7 @@ export default function LocationsPage() {
       <section className="bg-paper">
         <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-16 md:grid-cols-2 md:px-6">
           <div className="photo-frame relative aspect-[16/10] overflow-hidden rounded-[2rem]">
-            <Image src="/tora/media/team-2024.webp" alt="Команда клуба на пьедестале" fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+            <Image src="/media/team-2024.webp" alt="Команда клуба на пьедестале" fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
           </div>
           <div>
             <h2 className="font-heading text-4xl">Залы, из которых едут на турниры</h2>

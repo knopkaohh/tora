@@ -184,12 +184,22 @@
   display: grid;
   place-items: center;
   background: #f7f8fa;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+  animation: loader-auto-hide 0.4s ease 1.15s forwards;
 }
 
-.loader-screen.is-out {
+@keyframes loader-auto-hide {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader-screen.is-out,
+html.loader-skip .loader-screen {
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
 }
 
 .loader-bar {
@@ -230,6 +240,66 @@
   transform: scale(1.05);
 }
 
+.friends-mosaic {
+  column-count: 2;
+  column-gap: 6px;
+}
+
+@media (min-width: 768px) {
+  .friends-mosaic {
+    column-count: 3;
+    column-gap: 8px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .friends-mosaic {
+    column-count: 4;
+  }
+}
+
+.friends-mosaic-item {
+  display: block;
+  width: 100%;
+  margin: 0 0 6px;
+  padding: 0;
+  border: 0;
+  break-inside: avoid;
+  background: #021f40;
+  cursor: zoom-in;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.friends-mosaic.is-in .friends-mosaic-item {
+  animation: mosaic-in 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(var(--mosaic-i, 0) * 32ms);
+}
+
+@keyframes mosaic-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .friends-mosaic-item {
+    margin-bottom: 8px;
+  }
+}
+
+.friends-mosaic-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.friends-mosaic-item:hover img {
+  filter: brightness(1.06);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -247,5 +317,15 @@
   }
   .photo-frame img {
     transition: none;
+  }
+  .friends-mosaic-item:hover img {
+    filter: none;
+  }
+  .friends-mosaic-item {
+    opacity: 1;
+    transform: none;
+  }
+  .friends-mosaic.is-in .friends-mosaic-item {
+    animation: none;
   }
 }
