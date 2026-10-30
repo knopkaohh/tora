@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { phoneDisplay, phoneTel } from "@/lib/content";
 
 const groups = [
+  "Дошкольная, 4–7 лет",
   "Детская, 6–12 лет",
   "Средняя, 12–18 лет",
   "Взрослая группа",

@@ -9,7 +9,7 @@ import { schedule } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Расписание",
   description:
-    "Расписание Академии Окинавского Каратэ: детская группа 18:00–19:00, средняя 19:00–20:30, м. Савёловская — Дмитровская.",
+    "Расписание Академии Окинавского Каратэ: вторник и четверг. Дошкольная группа 15:30–16:00 на Шереметьевской, детская 18:00–19:00, средняя 19:00–20:30.",
 };
 
 export default function SchedulePage() {
@@ -18,7 +18,7 @@ export default function SchedulePage() {
       <PageHero
         kicker="Расписание"
         title="Вечер в додзё"
-        text="Две опубликованные группы в основном зале у метро Савёловская — Дмитровская и взрослая группа по набору. Дни недели подтверждаем, когда записываем на пробное."
+        text="Занятия — во вторник и четверг. Дошкольная группа в детском саду на Шереметьевской, детская и средняя вечером, взрослая — по набору."
         image="/media/kata-train.webp"
         alt="Тренировка ката"
       />
@@ -31,7 +31,8 @@ export default function SchedulePage() {
                 <p className="font-heading text-3xl leading-none text-signal md:text-4xl">{item.time}</p>
                 <div>
                   <h2 className="font-heading text-3xl">{item.title}</h2>
-                  <p className="mt-2 text-sm text-ink/55">{item.age} · {item.place}</p>
+                  <p className="mt-2 text-sm text-ink/55">{item.age} · {item.days}</p>
+                  <p className="mt-1 text-sm text-ink/55">{item.place}</p>
                   <p className="mt-4 max-w-xl text-sm leading-relaxed text-ink/75">{item.text}</p>
                 </div>
                 <TrialButton className="h-11">Записать в группу</TrialButton>

@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Контакты",
   description:
-    "Телефон Академии Окинавского Каратэ +7 495 003-777-3. Залы: Савёловская — Дмитровская, Писцовая, Смоленская.",
+    "Телефон Академии Окинавского Каратэ +7 495 003-777-3. Залы: Савёловская — Дмитровская, Шереметьевская, Писцовая, Смоленская.",
 };
 
 export default function ContactsPage() {
@@ -48,7 +48,7 @@ export default function ContactsPage() {
               <dd className="mt-2 space-y-2">
                 {schedule.map((item) => (
                   <p key={item.title}>
-                    {item.title}, {item.age}: {item.time}
+                    {item.title}, {item.age}: {item.days}, {item.time}
                   </p>
                 ))}
               </dd>

@@ -263,17 +263,16 @@ export default function HomePage() {
             <div className="rounded-[2rem] bg-canvas p-6 md:p-8">
               <p className="font-heading text-2xl">Расписание</p>
               <ul className="mt-6 space-y-4">
-                {schedule.slice(0, 2).map((item) => (
+                {schedule.map((item) => (
                   <li key={item.title} className="flex items-baseline justify-between gap-4 border-b border-ink/10 pb-4">
                     <span>
                       <span className="block font-medium">{item.title}</span>
-                      <span className="text-sm text-ink/55">{item.age}</span>
+                      <span className="text-sm text-ink/55">{item.age} · {item.days}</span>
                     </span>
                     <span className="font-heading text-lg">{item.time}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-5 text-sm text-ink/60">м. Савёловская — м. Дмитровская</p>
               <Link href="/schedule" className="mt-4 inline-block text-sm font-medium text-signal">
                 Полное расписание →
               </Link>
