@@ -3,12 +3,12 @@ import Image from "next/image";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { TrialButton } from "@/components/trial-button";
-import { trainers } from "@/lib/content";
+import { starStudent, trainers } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Тренеры",
   description:
-    "Николай Коровин, Алексей Юрков и Даниил Костин — тренеры Академии Окинавского Каратэ, мастера спорта и обладатели данов.",
+    "Николай Коровин, Алексей Юрков и Даниил Костин — тренеры Академии Окинавского Каратэ. Ирина — лучшая ученица клуба «Тигр».",
 };
 
 export default function TrainersPage() {
@@ -17,7 +17,7 @@ export default function TrainersPage() {
       <PageHero
         kicker="Тренеры · 道"
         title="Учителя пути"
-        text="Президент академии, генеральный директор и старший тренер. За их именами — даны, сборная и десятки лет практики."
+        text="Президент академии, генеральный директор и старший тренер. Ниже — Ирина, лучшая ученица клуба «Тигр»."
         image="/media/team-russia.webp"
         alt="Сборная России по каратэ с детьми"
       />
@@ -71,6 +71,40 @@ export default function TrainersPage() {
             </Reveal>
           </article>
         ))}
+
+        <article
+          id={starStudent.id}
+          className="scroll-mt-28 grid items-start gap-8 border-t border-ink/10 pt-16 md:grid-cols-[0.85fr_1.15fr] md:pt-24"
+        >
+          <Reveal>
+            <div className="photo-frame relative aspect-[1/1] overflow-hidden rounded-[2rem] bg-ink md:aspect-[3/4]">
+              <Image
+                src={starStudent.image}
+                alt={starStudent.alt}
+                fill
+                className="object-cover object-[center_20%]"
+                sizes="(min-width: 768px) 36vw, 100vw"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={80}>
+            <p className="text-[0.72rem] tracking-[0.22em] text-signal uppercase">{starStudent.role}</p>
+            <h2 className="mt-3 font-heading text-4xl md:text-6xl">{starStudent.name}</h2>
+            <p className="mt-3 text-sm text-ink/55">{starStudent.meta}</p>
+            <p className="mt-6 max-w-xl text-sm leading-relaxed text-ink/75">{starStudent.text}</p>
+            <ol className="mt-8 divide-y divide-ink/10 border-y border-ink/10">
+              {starStudent.wins.map((win) => (
+                <li key={`${win.year}-${win.title}`} className="grid gap-1 py-4 md:grid-cols-[6.5rem_1fr]">
+                  <span className="text-sm text-signal">{win.year}</span>
+                  <div>
+                    <p className="font-medium">{win.title}</p>
+                    <p className="text-sm text-ink/55">{win.place}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </Reveal>
+        </article>
       </div>
 
       <section className="bg-ink text-white">

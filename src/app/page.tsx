@@ -10,6 +10,7 @@ import {
   pillars,
   schedule,
   stats,
+  starStudent,
   trainers,
   trainings,
 } from "@/lib/content";
@@ -237,6 +238,28 @@ export default function HomePage() {
             </Reveal>
           ))}
         </div>
+        <Reveal>
+          <Link
+            href={`/trainers#${starStudent.id}`}
+            className="mt-6 grid overflow-hidden rounded-[2rem] bg-paper sm:grid-cols-[16rem_1fr]"
+          >
+            <div className="photo-frame relative aspect-[4/3] sm:aspect-auto sm:min-h-full">
+              <Image
+                src={starStudent.image}
+                alt={starStudent.alt}
+                fill
+                className="object-cover object-[center_18%]"
+                sizes="(min-width: 640px) 16rem, 100vw"
+              />
+            </div>
+            <div className="flex flex-col justify-center p-6 md:p-8">
+              <p className="text-xs tracking-[0.16em] text-signal uppercase">{starStudent.role}</p>
+              <h3 className="mt-3 font-heading text-3xl md:text-4xl">{starStudent.name}</h3>
+              <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/70">{starStudent.text}</p>
+              <p className="mt-5 text-sm text-ink">Смотреть путь →</p>
+            </div>
+          </Link>
+        </Reveal>
       </section>
 
       <section className="bg-paper">
