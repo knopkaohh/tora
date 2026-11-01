@@ -326,14 +326,14 @@ export const offers = [
   },
   {
     name: "Дошкольная группа",
-    price: "7 000 ₽",
+    price: "4 000 ₽",
     hint: "4–7 лет · 8 занятий в месяц",
     featured: false,
     points: [
       "Детский сад Марьина Роща: ул. Шереметьевская, д. 14",
       "Вторник и четверг, 15:30—16:00",
       "Короткое занятие для малышей",
-      "Абонемент — 7 000 ₽ за 8 занятий в месяц",
+      "Абонемент — 4 000 ₽ за 8 занятий в месяц",
     ],
   },
   {
@@ -457,6 +457,27 @@ export const trainers = [
   },
 ] as const;
 
+export const starStudent = {
+  id: "irina",
+  role: "Лучшая ученица клуба «Тигр»",
+  name: "Ирина",
+  meta: "Клуб «Тигр» · Москва",
+  image: "/media/irina.webp",
+  alt: "Ирина с аттестационным дипломом между Николаем Коровиным и Алексеем Юрковым",
+  text: "Лучшая ученица клуба «Тигр». Чемпионка первенства России и обладательница Кубка Николая Японского.",
+  wins: [
+    { year: "2018", title: "Чемпион первенства Москвы", place: "Россия, Москва" },
+    { year: "2018", title: "Призёр всероссийских соревнований", place: "Россия" },
+    { year: "2019", title: "Призёр Кубка России", place: "Россия" },
+    { year: "2020", title: "Обладатель Кубка Николая Японского", place: "Россия, Пушкино" },
+    { year: "2021", title: "Призёр первенства России", place: "Россия" },
+    { year: "2022", title: "Призёр первенства России", place: "Россия" },
+    { year: "2022", title: "Призёр Кубка России", place: "Россия" },
+    { year: "2023", title: "Чемпион первенства России", place: "Россия" },
+    { year: "2023", title: "Призёр Кубка Николая Японского", place: "Россия, Пушкино" },
+  ],
+} as const;
+
 export const portfolioPhotos = [
   {
     id: "dojo-kids",
@@ -466,6 +487,15 @@ export const portfolioPhotos = [
     image: "/media/portfolio-dojo-kids.webp",
     alt: "Детская группа и тренеры в зале после тренировки",
     featured: true,
+  },
+  {
+    id: "stance",
+    tag: "Практика",
+    title: "Стойка в додзё",
+    text: "Николай Коровин, Алексей Юрков и ученики в одной стойке — ритм зала, который передают дальше.",
+    image: "/media/portfolio-stance.webp",
+    alt: "Четверо в белых ги в стойке в спортивном зале: Алексей Юрков, двое учеников и Николай Коровин",
+    featured: false,
   },
   {
     id: "first-diplomas",
@@ -829,16 +859,6 @@ export const portfolioFriends = [
 
 export const portfolioFilms = [
   {
-    id: "black-belt-path",
-    tag: "Фильм",
-    title: "Путь к черному поясу",
-    text: "Первый фильм академии. Смотрите прямо на сайте.",
-    kind: "vk" as const,
-    embed:
-      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239017&hash=d601f7b1419e9678&hd=3",
-    href: "https://vkvideo.ru/video-242044266_456239017",
-  },
-  {
     id: "shturmin-70",
     tag: "Фильм",
     title: "Алексей Борисович Штурмин — фильм к 70-летию",
@@ -847,6 +867,16 @@ export const portfolioFilms = [
     embed:
       "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239023&hash=0c72c59b685ac681&hd=3",
     href: "https://vkvideo.ru/video-242044266_456239023",
+  },
+  {
+    id: "black-belt-path",
+    tag: "Фильм",
+    title: "Путь к черному поясу",
+    text: "Первый фильм академии. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239017&hash=d601f7b1419e9678&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239017",
   },
   {
     id: "japan-diaries",
@@ -910,6 +940,29 @@ export const kokoroFilms = [
     embed:
       "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239025&hash=0a7810f9320a17dc&hd=3",
     href: "https://vkvideo.ru/video-242044266_456239025",
+  },
+] as const;
+
+export const kokoroFilmsPart2 = [
+  {
+    id: "kokoro2-1",
+    tag: "Сезон 2",
+    title: "В поисках Кокоро 2. Часть 1",
+    text: "Первая часть второго сезона. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239029&hash=186da34c36390313&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239029",
+  },
+  {
+    id: "kokoro2-2",
+    tag: "Сезон 2",
+    title: "В поисках Кокоро 2. Часть 2",
+    text: "Вторая часть второго сезона. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239030&hash=a18fe5a9b781c548&hd=3",
+    href: "https://vkvideo.ru/video-242044266_456239030",
   },
 ] as const;
 
