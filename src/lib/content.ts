@@ -460,10 +460,10 @@ export const trainers = [
 export const starStudent = {
   id: "irina",
   role: "Лучшая ученица клуба «Тигр»",
-  name: "Ирина",
+  name: "Ирина Фадеева",
   meta: "Клуб «Тигр» · Москва",
   image: "/media/irina.webp",
-  alt: "Ирина с аттестационным дипломом между Николаем Коровиным и Алексеем Юрковым",
+  alt: "Ирина Фадеева с аттестационным дипломом между Николаем Коровиным и Алексеем Юрковым",
   text: "Лучшая ученица клуба «Тигр». Чемпионка первенства России и обладательница Кубка Николая Японского.",
   wins: [
     { year: "2018", title: "Чемпион первенства Москвы", place: "Россия, Москва" },
@@ -869,6 +869,16 @@ export const portfolioFilms = [
     href: "https://vkvideo.ru/video-242044266_456239023",
   },
   {
+    id: "black-belt-cshk-50",
+    tag: "Фильм",
+    title: "«Чёрный Пояс» — «50 лет Центральной школе каратэ»",
+    text: "Фильм к 50-летию Центральной школы каратэ. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-56636835&id=456240155&hd=3",
+    href: "https://vkvideo.ru/video-56636835_456240155",
+  },
+  {
     id: "black-belt-path",
     tag: "Фильм",
     title: "Путь к черному поясу",
@@ -877,6 +887,26 @@ export const portfolioFilms = [
     embed:
       "https://vkvideo.ru/video_ext.php?oid=-242044266&id=456239017&hash=d601f7b1419e9678&hd=3",
     href: "https://vkvideo.ru/video-242044266_456239017",
+  },
+  {
+    id: "central-karate-school",
+    tag: "Фильм",
+    title: "Центральная школа каратэ",
+    text: "Фильм о Центральной школе каратэ. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=3094083&id=143978426&hd=3",
+    href: "https://vkvideo.ru/video3094083_143978426",
+  },
+  {
+    id: "karate-russian-streets",
+    tag: "Фильм",
+    title: "Каратэ русских улиц",
+    text: "Фильм о каратэ. Смотрите прямо на сайте.",
+    kind: "vk" as const,
+    embed:
+      "https://vkvideo.ru/video_ext.php?oid=-100384220&id=456239085&hd=3",
+    href: "https://vkvideo.ru/video-100384220_456239085",
   },
   {
     id: "japan-diaries",
